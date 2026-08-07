@@ -461,48 +461,19 @@ python -m ocr_system.cli curriculum outputs/AIT_curriculum_ocr.json --ground-tru
 ระบบจะเปรียบเทียบข้อมูลที่ OCR ได้ กับ Ground Truth ทั้งในแง่ฟิลด์, หน้าหนังสือหลักสูตร, หมวดหมู่, และประเภทวิชา:
 ```bash
 # IT — แผนสหกิจ (coop)
-python -m ocr_system.evaluate_all_levels outputs/IT_curriculum_ocr.json \
-    data/ground_truth/IT_academic_plan_coop.json \
-    data/ground_truth/IT_academic_plan_no_coop.json \
-    --program IT \
-    --plan coop \
-    --page-mapping data/ground_truth/it_coop_course_page_mapping.csv \
-    --output-dir outputs
+python -m ocr_system.evaluate_all_levels outputs/IT_curriculum_ocr.json data/ground_truth/IT_academic_plan_coop.json data/ground_truth/IT_academic_plan_no_coop.json --program IT --plan coop --page-mapping data/ground_truth/it_coop_course_page_mapping.csv --output-dir outputs
 
 # IT — แผนปกติ (no_coop)
-python -m ocr_system.evaluate_all_levels outputs/IT_curriculum_ocr.json \
-    data/ground_truth/IT_academic_plan_coop.json \
-    data/ground_truth/IT_academic_plan_no_coop.json \
-    --program IT \
-    --plan no_coop \
-    --page-mapping data/ground_truth/it_no_coop_course_page_mapping.csv \
-    --output-dir outputs
+python -m ocr_system.evaluate_all_levels outputs/IT_curriculum_ocr.json data/ground_truth/IT_academic_plan_coop.json data/ground_truth/IT_academic_plan_no_coop.json --program IT --plan no_coop --page-mapping data/ground_truth/it_no_coop_course_page_mapping.csv --output-dir outputs
 
 # DSBA — แผนสหกิจ (coop)
-python -m ocr_system.evaluate_all_levels outputs/dsba_curriculum_ocr.json \
-    data/ground_truth/DSBA_academic_plan_coop.json \
-    data/ground_truth/DSBA_academic_plan_no_coop.json \
-    --program DSBA \
-    --plan coop \
-    --page-mapping data/ground_truth/dsba_coop_course_page_mapping.csv \
-    --output-dir outputs
+python -m ocr_system.evaluate_all_levels outputs/dsba_curriculum_ocr.json data/ground_truth/DSBA_academic_plan_coop.json data/ground_truth/DSBA_academic_plan_no_coop.json --program DSBA --plan coop --page-mapping data/ground_truth/dsba_coop_course_page_mapping.csv --output-dir outputs
 
 # DSBA — แผนปกติ (no_coop)
-python -m ocr_system.evaluate_all_levels outputs/dsba_curriculum_ocr.json \
-    data/ground_truth/DSBA_academic_plan_coop.json \
-    data/ground_truth/DSBA_academic_plan_no_coop.json \
-    --program DSBA \
-    --plan no_coop \
-    --page-mapping data/ground_truth/dsba_no_coop_course_page_mapping.csv \
-    --output-dir outputs
+python -m ocr_system.evaluate_all_levels outputs/dsba_curriculum_ocr.json data/ground_truth/DSBA_academic_plan_coop.json data/ground_truth/DSBA_academic_plan_no_coop.json --program DSBA --plan no_coop --page-mapping data/ground_truth/dsba_no_coop_course_page_mapping.csv --output-dir outputs
 
 # AIT
-python -m ocr_system.evaluate_all_levels outputs/AIT_curriculum_ocr.json \
-    data/ground_truth/AIT_academic_plan.json \
-    --program AIT \
-    --plan no_coop \
-    --page-mapping data/ground_truth/ait_course_page_mapping.csv \
-    --output-dir outputs
+python -m ocr_system.evaluate_all_levels outputs/AIT_curriculum_ocr.json data/ground_truth/AIT_academic_plan.json --program AIT --plan no_coop --page-mapping data/ground_truth/ait_course_page_mapping.csv --output-dir outputs
 ```
 
 
