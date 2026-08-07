@@ -1019,6 +1019,7 @@ def extract_curriculum(payload: dict[str, Any], program: str = "DSBA", plan: str
     elif program == "DSBA":
         DSBA_OVERRIDES = {
             "06016401": {"name_th": "คณิตศาสตร์สำหรับเทคโนโลยีสารสนเทศ", "name_en": "MATHEMATICS FOR INFORMATION TECHNOLOGY", "credits": "3(3-0-6)", "category": "หมวดวิชาเฉพาะ", "type": "บังคับ", "prerequisite": "ไม่มี"},
+            "06066302": {"name_th": "การเขียนโปรแกรมเว็บพื้นฐาน", "name_en": "FUNDAMENTAL WEB PROGRAMMING", "credits": "3(2-2-5)", "category": "หมวดวิชาเฉพาะ", "type": "บังคับ", "prerequisite": "ไม่มี"},
             "90644008": {"prerequisite": "ไม่มี"},
             "06066100": {"prerequisite": "ไม่มี"}
         }
