@@ -1,0 +1,26 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+outputs/
+*.egg-info/
+
+# Environment variables (API keys, secrets)
+.env
+.env.*
+!.env.example
+
+# Data files (อาจมีขนาดใหญ่)
+data/
+*.pdf
+*.png
+*.jpg
+*.jpeg
+
+# Logs
+*.log
+*.txt
+
+# OS files
+.DS_Store
+Thumbs.db
