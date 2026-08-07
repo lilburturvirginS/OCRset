@@ -1,0 +1,181 @@
+{
+  "ocr_source": "outputs/dsba_curriculum_ocr.json",
+  "ground_truth_files": {
+    "DSBA_academic_plan_coop.json": {
+      "field_level": {
+        "matched_courses": 80,
+        "per_field": {
+          "name_en": {
+            "checked": 80,
+            "correct": 80,
+            "accuracy": 1.0
+          },
+          "credits": {
+            "checked": 80,
+            "correct": 80,
+            "accuracy": 1.0
+          },
+          "category": {
+            "checked": 80,
+            "correct": 80,
+            "accuracy": 1.0
+          },
+          "type": {
+            "checked": 80,
+            "correct": 80,
+            "accuracy": 1.0
+          },
+          "prerequisite": {
+            "checked": 80,
+            "correct": 80,
+            "accuracy": 1.0
+          }
+        }
+      },
+      "page_level": {
+        "total_gt_courses": 80,
+        "found_by_code": 79,
+        "found_by_name_only": 0,
+        "not_found": 1,
+        "page_localization_rate": 0.9875,
+        "distinct_pages_used": 7,
+        "page_range": "16-22",
+        "missing_codes": [
+          "06016401"
+        ]
+      },
+      "category_level": {
+        "หมวดวิชาเฉพาะ": {
+          "gt_total": 72,
+          "matched": 72,
+          "recall": 1.0,
+          "per_field": {
+            "name_en": {
+              "checked": 72,
+              "correct": 72,
+              "accuracy": 1.0
+            },
+            "credits": {
+              "checked": 72,
+              "correct": 72,
+              "accuracy": 1.0
+            },
+            "category": {
+              "checked": 72,
+              "correct": 72,
+              "accuracy": 1.0
+            },
+            "type": {
+              "checked": 72,
+              "correct": 72,
+              "accuracy": 1.0
+            },
+            "prerequisite": {
+              "checked": 72,
+              "correct": 72,
+              "accuracy": 1.0
+            }
+          }
+        },
+        "หมวดวิชาศึกษาทั่วไป": {
+          "gt_total": 8,
+          "matched": 8,
+          "recall": 1.0,
+          "per_field": {
+            "name_en": {
+              "checked": 8,
+              "correct": 8,
+              "accuracy": 1.0
+            },
+            "credits": {
+              "checked": 8,
+              "correct": 8,
+              "accuracy": 1.0
+            },
+            "category": {
+              "checked": 8,
+              "correct": 8,
+              "accuracy": 1.0
+            },
+            "type": {
+              "checked": 8,
+              "correct": 8,
+              "accuracy": 1.0
+            },
+            "prerequisite": {
+              "checked": 8,
+              "correct": 8,
+              "accuracy": 1.0
+            }
+          }
+        }
+      },
+      "type_level": {
+        "บังคับ": {
+          "gt_total": 35,
+          "matched": 35,
+          "recall": 1.0,
+          "per_field": {
+            "name_en": {
+              "checked": 35,
+              "correct": 35,
+              "accuracy": 1.0
+            },
+            "credits": {
+              "checked": 35,
+              "correct": 35,
+              "accuracy": 1.0
+            },
+            "category": {
+              "checked": 35,
+              "correct": 35,
+              "accuracy": 1.0
+            },
+            "type": {
+              "checked": 35,
+              "correct": 35,
+              "accuracy": 1.0
+            },
+            "prerequisite": {
+              "checked": 35,
+              "correct": 35,
+              "accuracy": 1.0
+            }
+          }
+        },
+        "เลือก": {
+          "gt_total": 45,
+          "matched": 45,
+          "recall": 1.0,
+          "per_field": {
+            "name_en": {
+              "checked": 45,
+              "correct": 45,
+              "accuracy": 1.0
+            },
+            "credits": {
+              "checked": 45,
+              "correct": 45,
+              "accuracy": 1.0
+            },
+            "category": {
+              "checked": 45,
+              "correct": 45,
+              "accuracy": 1.0
+            },
+            "type": {
+              "checked": 45,
+              "correct": 45,
+              "accuracy": 1.0
+            },
+            "prerequisite": {
+              "checked": 45,
+              "correct": 45,
+              "accuracy": 1.0
+            }
+          }
+        }
+      }
+    }
+  }
+}

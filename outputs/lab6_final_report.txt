@@ -1,0 +1,69 @@
+================================================================================
+                 LAB 6 FINAL EVALUATION REPORT SUMMARY
+================================================================================
+
+Scenarios: DSBA - Cooperative Education (Coop)
+  Ground Truth File: DSBA_academic_plan_coop.json
+  Field Accuracy Summary:
+    - name_en     :  100.00% (80/80)
+    - credits     :  100.00% (80/80)
+    - category    :  100.00% (80/80)
+    - type        :  100.00% (80/80)
+    - prerequisite:  100.00% (80/80)
+  Page Localization Rate: 100.00% (80/80)
+  Distinct Pages Used   : 71
+
+--------------------------------------------------------------------------------
+
+Scenarios: DSBA - Regular Plan (No Coop)
+  Ground Truth File: DSBA_academic_plan_no_coop.json
+  Field Accuracy Summary:
+    - name_en     :  100.00% (80/80)
+    - credits     :  100.00% (80/80)
+    - category    :  100.00% (80/80)
+    - type        :  100.00% (80/80)
+    - prerequisite:  100.00% (80/80)
+  Page Localization Rate: 100.00% (80/80)
+  Distinct Pages Used   : 71
+
+--------------------------------------------------------------------------------
+
+Scenarios: AIT - Regular Plan (No Coop)
+  Ground Truth File: AIT_academic_plan.json
+  Field Accuracy Summary:
+    - name_en     :  100.00% (49/49)
+    - credits     :  100.00% (49/49)
+    - category    :  100.00% (49/49)
+    - type        :  100.00% (49/49)
+    - prerequisite:  100.00% (49/49)
+  Page Localization Rate: 100.00% (49/49)
+  Distinct Pages Used   : 37
+
+--------------------------------------------------------------------------------
+
+Scenarios: IT - Cooperative Education (Coop)
+  Ground Truth File: IT_academic_plan_coop.json
+  Field Accuracy Summary:
+    - name_en     :  100.00% (99/99)
+    - credits     :  100.00% (99/99)
+    - category    :  100.00% (99/99)
+    - type        :  100.00% (99/99)
+    - prerequisite:   98.99% (98/99)
+  Page Localization Rate: 100.00% (99/99)
+  Distinct Pages Used   : 67
+
+--------------------------------------------------------------------------------
+
+Scenarios: IT - Regular Plan (No Coop)
+  Ground Truth File: IT_academic_plan_no_coop.json
+  Field Accuracy Summary:
+    - name_en     :  100.00% (99/99)
+    - credits     :  100.00% (99/99)
+    - category    :  100.00% (99/99)
+    - type        :  100.00% (99/99)
+    - prerequisite:   98.99% (98/99)
+  Page Localization Rate: 100.00% (99/99)
+  Distinct Pages Used   : 67
+
+--------------------------------------------------------------------------------
+
