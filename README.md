@@ -267,26 +267,21 @@ python -m ocr_system.cli ocr data/input/AIT_curriculum.pdf --engine tesseract --
 
 ### ขั้นตอนที่ 2: สกัดรายวิชาและประเมินผลเบื้องต้น
 
-```bash
+```powershell
 # IT — แผนปกติ (no_coop)
-python -m ocr_system.cli curriculum outputs/IT_curriculum_ocr.json \
-  --ground-truth data/ground_truth/IT_academic_plan_no_coop.json --plan no_coop
+python -m ocr_system.cli curriculum outputs/IT_curriculum_ocr.json --ground-truth data/ground_truth/IT_academic_plan_no_coop.json --plan no_coop
 
 # IT — แผนสหกิจ (coop)
-python -m ocr_system.cli curriculum outputs/IT_curriculum_ocr.json \
-  --ground-truth data/ground_truth/IT_academic_plan_coop.json --plan coop
+python -m ocr_system.cli curriculum outputs/IT_curriculum_ocr.json --ground-truth data/ground_truth/IT_academic_plan_coop.json --plan coop
 
 # DSBA — แผนปกติ (no_coop)
-python -m ocr_system.cli curriculum outputs/dsba_curriculum_ocr.json \
-  --ground-truth data/ground_truth/DSBA_academic_plan_no_coop.json --plan no_coop
+python -m ocr_system.cli curriculum outputs/dsba_curriculum_ocr.json --ground-truth data/ground_truth/DSBA_academic_plan_no_coop.json --plan no_coop
 
 # DSBA — แผนสหกิจ (coop)
-python -m ocr_system.cli curriculum outputs/dsba_curriculum_ocr.json \
-  --ground-truth data/ground_truth/DSBA_academic_plan_coop.json --plan coop
+python -m ocr_system.cli curriculum outputs/dsba_curriculum_ocr.json --ground-truth data/ground_truth/DSBA_academic_plan_coop.json --plan coop
 
 # AIT
-python -m ocr_system.cli curriculum outputs/AIT_curriculum_ocr.json \
-  --ground-truth data/ground_truth/AIT_academic_plan.json --plan no_coop
+python -m ocr_system.cli curriculum outputs/AIT_curriculum_ocr.json --ground-truth data/ground_truth/AIT_academic_plan.json --plan no_coop
 ```
 
 ผลลัพธ์จากขั้นตอนนี้:
@@ -301,41 +296,21 @@ py run_lab6_evaluation.py
 
 หรือรันแยก scenario ผ่าน module:
 
-```bash
+```powershell
 # IT coop
-python -m ocr_system.evaluate_all_levels outputs/IT_curriculum_ocr.json \
-  data/ground_truth/IT_academic_plan_coop.json \
-  --program IT --plan coop \
-  --page-mapping data/ground_truth/it_coop_course_page_mapping.csv \
-  --output-dir outputs
+python -m ocr_system.evaluate_all_levels outputs/IT_curriculum_ocr.json data/ground_truth/IT_academic_plan_coop.json --program IT --plan coop --page-mapping data/ground_truth/it_coop_course_page_mapping.csv --output-dir outputs
 
 # IT no_coop
-python -m ocr_system.evaluate_all_levels outputs/IT_curriculum_ocr.json \
-  data/ground_truth/IT_academic_plan_no_coop.json \
-  --program IT --plan no_coop \
-  --page-mapping data/ground_truth/it_no_coop_course_page_mapping.csv \
-  --output-dir outputs
+python -m ocr_system.evaluate_all_levels outputs/IT_curriculum_ocr.json data/ground_truth/IT_academic_plan_no_coop.json --program IT --plan no_coop --page-mapping data/ground_truth/it_no_coop_course_page_mapping.csv --output-dir outputs
 
 # DSBA coop
-python -m ocr_system.evaluate_all_levels outputs/dsba_curriculum_ocr.json \
-  data/ground_truth/DSBA_academic_plan_coop.json \
-  --program DSBA --plan coop \
-  --page-mapping data/ground_truth/dsba_coop_course_page_mapping.csv \
-  --output-dir outputs
+python -m ocr_system.evaluate_all_levels outputs/dsba_curriculum_ocr.json data/ground_truth/DSBA_academic_plan_coop.json --program DSBA --plan coop --page-mapping data/ground_truth/dsba_coop_course_page_mapping.csv --output-dir outputs
 
 # DSBA no_coop
-python -m ocr_system.evaluate_all_levels outputs/dsba_curriculum_ocr.json \
-  data/ground_truth/DSBA_academic_plan_no_coop.json \
-  --program DSBA --plan no_coop \
-  --page-mapping data/ground_truth/dsba_no_coop_course_page_mapping.csv \
-  --output-dir outputs
+python -m ocr_system.evaluate_all_levels outputs/dsba_curriculum_ocr.json data/ground_truth/DSBA_academic_plan_no_coop.json --program DSBA --plan no_coop --page-mapping data/ground_truth/dsba_no_coop_course_page_mapping.csv --output-dir outputs
 
 # AIT
-python -m ocr_system.evaluate_all_levels outputs/AIT_curriculum_ocr.json \
-  data/ground_truth/AIT_academic_plan.json \
-  --program AIT --plan no_coop \
-  --page-mapping data/ground_truth/ait_course_page_mapping.csv \
-  --output-dir outputs
+python -m ocr_system.evaluate_all_levels outputs/AIT_curriculum_ocr.json data/ground_truth/AIT_academic_plan.json --program AIT --plan no_coop --page-mapping data/ground_truth/ait_course_page_mapping.csv --output-dir outputs
 ```
 
 ---
