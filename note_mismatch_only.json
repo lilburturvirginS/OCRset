@@ -1,0 +1,156 @@
+[
+  {
+    "program": "IT",
+    "plan": "no_coop",
+    "code": "06016418",
+    "ocr_name_th": "การพัฒนาเว็บฝั่งเซิร์ฟเวอร์",
+    "gt_name_th": "การพัฒนาเว็บฝั่งเซิร์ฟเวอร์",
+    "ocr_note": "กลุ่มวิชาด้านการพัฒนาซอฟต์แวร์",
+    "gt_note": "กลุ่มวิชาด้านสื่อประสมสำหรับการพัฒนาสื่อเชิงโต้ตอบ เว็บ และ เกม",
+    "status": "mismatch",
+    "remark": ""
+  },
+  {
+    "program": "IT",
+    "plan": "no_coop",
+    "code": "06016481",
+    "ocr_name_th": "สหกิจศึกษา",
+    "gt_name_th": null,
+    "ocr_note": "เฉพาะโครงการเข้าร่วมสหกิจ",
+    "gt_note": null,
+    "status": "gt_null",
+    "remark": ""
+  },
+  {
+    "program": "IT",
+    "plan": "no_coop",
+    "code": "06016481\nหรือ\n06016482",
+    "ocr_name_th": null,
+    "gt_name_th": "สหกิจศึกษา\nหรือ\nสหกิจศึกษาต่างประเทศ",
+    "ocr_note": null,
+    "gt_note": "เฉพาะเข้าร่วมโครงการสหกิจ",
+    "status": "ocr_null",
+    "remark": ""
+  },
+  {
+    "program": "IT",
+    "plan": "no_coop",
+    "code": "06016482",
+    "ocr_name_th": "สหกิจศึกษาต่างประเทศ",
+    "gt_name_th": null,
+    "ocr_note": "เฉพาะโครงการเข้าร่วมสหกิจ",
+    "gt_note": null,
+    "status": "gt_null",
+    "remark": ""
+  },
+  {
+    "program": "IT",
+    "plan": "coop",
+    "code": "06016418",
+    "ocr_name_th": "การพัฒนาเว็บฝั่งเซิร์ฟเวอร์",
+    "gt_name_th": "การพัฒนาเว็บฝั่งเซิร์ฟเวอร์",
+    "ocr_note": "กลุ่มวิชาด้านการพัฒนาซอฟต์แวร์",
+    "gt_note": "กลุ่มวิชาด้านสื่อประสมสำหรับการพัฒนาสื่อเชิงโต้ตอบ เว็บ และ เกม",
+    "status": "mismatch",
+    "remark": ""
+  },
+  {
+    "program": "IT",
+    "plan": "coop",
+    "code": "06016481",
+    "ocr_name_th": "สหกิจศึกษา",
+    "gt_name_th": null,
+    "ocr_note": "เฉพาะโครงการเข้าร่วมสหกิจ",
+    "gt_note": null,
+    "status": "gt_null",
+    "remark": ""
+  },
+  {
+    "program": "IT",
+    "plan": "coop",
+    "code": "06016482",
+    "ocr_name_th": "สหกิจศึกษาต่างประเทศ",
+    "gt_name_th": null,
+    "ocr_note": "เฉพาะโครงการเข้าร่วมสหกิจ",
+    "gt_note": null,
+    "status": "gt_null",
+    "remark": ""
+  },
+  {
+    "program": "IT",
+    "plan": "coop",
+    "code": "90643021",
+    "ocr_name_th": "ผู้ประกอบการสมัยใหม่",
+    "gt_name_th": "ผู้ประกอบการสมัยใหม่",
+    "ocr_note": null,
+    "gt_note": "กลุ่มวิชาตามเกณฑ่ของคณะ (Faculty requirement)",
+    "status": "ocr_null",
+    "remark": ""
+  },
+  {
+    "program": "DSBA",
+    "plan": "no_coop",
+    "code": "90642033",
+    "ocr_name_th": "กฎหมายสําหรับคนรุ่นใหม่",
+    "gt_name_th": "กฎหมายสำหรับคนรุ่นใหม่",
+    "ocr_note": "กลุ่มวิชาตามเกณฑ่ของคณะ (Faculty requirement)",
+    "gt_note": "กลุ่มวิชาที่กำหนดโดยคณะ",
+    "status": "mismatch",
+    "remark": ""
+  },
+  {
+    "program": "DSBA",
+    "plan": "no_coop",
+    "code": "90643021",
+    "ocr_name_th": "ผู้ประกอบการสมัยใหม่",
+    "gt_name_th": "ผู้ประกอบการสมัยใหม่",
+    "ocr_note": "กลุ่มวิชาตามเกณฑ่ของคณะ (Faculty requirement)",
+    "gt_note": "กลุ่มวิชาที่กำหนดโดยคณะ",
+    "status": "mismatch",
+    "remark": ""
+  },
+  {
+    "program": "DSBA",
+    "plan": "no_coop",
+    "code": "90644042",
+    "ocr_name_th": "การสื่อสารและการนําเสนออย่างมืออาชีพ",
+    "gt_name_th": "การสื่อสารและการนำเสนออย่างมืออาชีพ",
+    "ocr_note": "กลุ่มวิชาตามเกณฑ่ของคณะ (Faculty requirement)",
+    "gt_note": "กลุ่มวิชาที่กำหนดโดยคณะ",
+    "status": "mismatch",
+    "remark": ""
+  },
+  {
+    "program": "DSBA",
+    "plan": "coop",
+    "code": "90642033",
+    "ocr_name_th": "กฎหมายสําหรับคนรุ่นใหม่",
+    "gt_name_th": "กฎหมายสำหรับคนรุ่นใหม่",
+    "ocr_note": "กลุ่มวิชาตามเกณฑ่ของคณะ (Faculty requirement)",
+    "gt_note": "กลุ่มวิชาที่กำหนดโดยคณะ",
+    "status": "mismatch",
+    "remark": ""
+  },
+  {
+    "program": "DSBA",
+    "plan": "coop",
+    "code": "90643021",
+    "ocr_name_th": "ผู้ประกอบการสมัยใหม่",
+    "gt_name_th": "ผู้ประกอบการสมัยใหม่",
+    "ocr_note": "กลุ่มวิชาตามเกณฑ่ของคณะ (Faculty requirement)",
+    "gt_note": "กลุ่มวิชาที่กำหนดโดยคณะ",
+    "status": "mismatch",
+    "remark": ""
+  },
+  {
+    "program": "DSBA",
+    "plan": "coop",
+    "code": "90644042",
+    "ocr_name_th": "การสื่อสารและการนําเสนออย่างมืออาชีพ",
+    "gt_name_th": "การสื่อสารและการนำเสนออย่างมืออาชีพ",
+    "ocr_note": "กลุ่มวิชาตามเกณฑ่ของคณะ (Faculty requirement)",
+    "gt_note": "กลุ่มวิชาที่กำหนดโดยคณะ",
+    "status": "mismatch",
+    "remark": ""
+  }
+]
