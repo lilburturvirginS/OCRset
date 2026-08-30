@@ -1,0 +1,704 @@
+{
+  "text": {
+    "tokenizer": "pythainlp/newmm",
+    "attributes": {
+      "code": {
+        "label": "รหัสวิชา",
+        "n_items": 90,
+        "cer": 0.79235,
+        "wer": null,
+        "exact_match_acc": 0.211111,
+        "n_sub": 0,
+        "n_del": 580,
+        "n_ins": 0,
+        "n_missing": 71,
+        "n_hallucinated": 0,
+        "n_ref_chars": 732,
+        "error_samples": [
+          {
+            "key": "06016401 [ตกแถว]",
+            "gt": "06016401",
+            "pred": ""
+          },
+          {
+            "key": "90644xxx [ตกแถว]",
+            "gt": "90644xxx",
+            "pred": ""
+          },
+          {
+            "key": "06026204 [ตกแถว]",
+            "gt": "06026204",
+            "pred": ""
+          },
+          {
+            "key": "06026207 [ตกแถว]",
+            "gt": "06026207",
+            "pred": ""
+          },
+          {
+            "key": "06026208 [ตกแถว]",
+            "gt": "06026208",
+            "pred": ""
+          }
+        ]
+      },
+      "name_th": {
+        "label": "ชื่อวิชา (ไทย) ⭐",
+        "n_items": 90,
+        "cer": 0.864836,
+        "wer": 0.930886,
+        "exact_match_acc": 0.133333,
+        "n_sub": 23,
+        "n_del": 2364,
+        "n_ins": 6,
+        "n_missing": 71,
+        "n_hallucinated": 0,
+        "n_ref_chars": 2767,
+        "error_samples": [
+          {
+            "key": "06066303",
+            "gt": "การแก้ปัญหาและโปรแกรมคอมพิวเตอร์",
+            "pred": "การแก้ปัญหาและการโปรแกรมคอมพิวเตอร์"
+          },
+          {
+            "key": "90641001",
+            "gt": "โรงเรียนสร้างเสน่าห์",
+            "pred": "โรงเรียนสร้างเสน่ห์"
+          },
+          {
+            "key": "06026203",
+            "gt": "การโปรแกรมคอมพิวเตอร์",
+            "pred": "การโปรแกรมคอมพิวเตอร"
+          },
+          {
+            "key": "06026205",
+            "gt": "การตลาดเบื้อต้น",
+            "pred": "การตลาดเบื้องตน"
+          },
+          {
+            "key": "06066001",
+            "gt": "ความน่าจะเป็นและสถิติ",
+            "pred": "ความนาจะเปนและสถิติ"
+          }
+        ]
+      },
+      "name_en": {
+        "label": "ชื่อวิชา (อังกฤษ) ⭐",
+        "n_items": 90,
+        "cer": 1.0,
+        "wer": 1.0,
+        "exact_match_acc": 0.0,
+        "n_sub": 0,
+        "n_del": 2659,
+        "n_ins": 0,
+        "n_missing": 90,
+        "n_hallucinated": 0,
+        "n_ref_chars": 2659,
+        "error_samples": [
+          {
+            "key": "06026200",
+            "gt": "CALCULUS 1",
+            "pred": "None"
+          },
+          {
+            "key": "06026202",
+            "gt": "LINEAR ALGEBRA",
+            "pred": "None"
+          },
+          {
+            "key": "06066101",
+            "gt": "BUSINESS FUNDAMENTALS FOR INFORMATION\nTECHNOLOGY",
+            "pred": "None"
+          },
+          {
+            "key": "90641003",
+            "gt": "SPORTS AND RECREATIONAL ACTIVITIES",
+            "pred": "None"
+          },
+          {
+            "key": "90644007",
+            "gt": "FOUNDATION ENGLISH 1",
+            "pred": "None"
+          }
+        ]
+      },
+      "credits": {
+        "label": "หน่วยกิต",
+        "n_items": 90,
+        "cer": 0.817088,
+        "wer": null,
+        "exact_match_acc": 0.211111,
+        "n_sub": 0,
+        "n_del": 679,
+        "n_ins": 0,
+        "n_missing": 71,
+        "n_hallucinated": 0,
+        "n_ref_chars": 831,
+        "error_samples": [
+          {
+            "key": "06016401 [ตกแถว]",
+            "gt": "3(3-0-6)",
+            "pred": ""
+          },
+          {
+            "key": "90644xxx [ตกแถว]",
+            "gt": "3(3-0-6) หรือ 3(2-2-5)",
+            "pred": ""
+          },
+          {
+            "key": "06026204 [ตกแถว]",
+            "gt": "3(3-0-6)",
+            "pred": ""
+          },
+          {
+            "key": "06026207 [ตกแถว]",
+            "gt": "3(2-2-5)",
+            "pred": ""
+          },
+          {
+            "key": "06026208 [ตกแถว]",
+            "gt": "3(3-0-6)",
+            "pred": ""
+          }
+        ]
+      },
+      "year_sem": {
+        "label": "ปี/ภาค",
+        "n_items": 90,
+        "cer": 0.788889,
+        "wer": null,
+        "exact_match_acc": 0.211111,
+        "n_sub": 0,
+        "n_del": 213,
+        "n_ins": 0,
+        "n_missing": 71,
+        "n_hallucinated": 0,
+        "n_ref_chars": 270,
+        "error_samples": [
+          {
+            "key": "06016401 [ตกแถว]",
+            "gt": "1/1",
+            "pred": ""
+          },
+          {
+            "key": "90644xxx [ตกแถว]",
+            "gt": "2/1",
+            "pred": ""
+          },
+          {
+            "key": "06026204 [ตกแถว]",
+            "gt": "2/2",
+            "pred": ""
+          },
+          {
+            "key": "06026207 [ตกแถว]",
+            "gt": "2/2",
+            "pred": ""
+          },
+          {
+            "key": "06026208 [ตกแถว]",
+            "gt": "2/2",
+            "pred": ""
+          }
+        ]
+      },
+      "category": {
+        "label": "หมวดวิชา",
+        "n_items": 90,
+        "cer": 1.0,
+        "wer": null,
+        "exact_match_acc": 0.0,
+        "n_sub": 0,
+        "n_del": 1238,
+        "n_ins": 0,
+        "n_missing": 90,
+        "n_hallucinated": 0,
+        "n_ref_chars": 1238,
+        "error_samples": [
+          {
+            "key": "06026200",
+            "gt": "หมวดวิชาเฉพาะ",
+            "pred": "None"
+          },
+          {
+            "key": "06026202",
+            "gt": "หมวดวิชาเฉพาะ",
+            "pred": "None"
+          },
+          {
+            "key": "06066101",
+            "gt": "หมวดวิชาเฉพาะ",
+            "pred": "None"
+          },
+          {
+            "key": "90641003",
+            "gt": "หมวดวิชาศึกษาทั่วไป",
+            "pred": "None"
+          },
+          {
+            "key": "90644007",
+            "gt": "หมวดวิชาศึกษาทั่วไป",
+            "pred": "None"
+          }
+        ]
+      },
+      "ctype": {
+        "label": "บังคับ/เลือก",
+        "n_items": 90,
+        "cer": 1.0,
+        "wer": null,
+        "exact_match_acc": 0.0,
+        "n_sub": 0,
+        "n_del": 486,
+        "n_ins": 0,
+        "n_missing": 90,
+        "n_hallucinated": 0,
+        "n_ref_chars": 486,
+        "error_samples": [
+          {
+            "key": "06026200",
+            "gt": "บังคับ",
+            "pred": "None"
+          },
+          {
+            "key": "06026202",
+            "gt": "บังคับ",
+            "pred": "None"
+          },
+          {
+            "key": "06066101",
+            "gt": "บังคับ",
+            "pred": "None"
+          },
+          {
+            "key": "90641003",
+            "gt": "บังคับ",
+            "pred": "None"
+          },
+          {
+            "key": "90644007",
+            "gt": "บังคับ",
+            "pred": "None"
+          }
+        ]
+      },
+      "prereq": {
+        "label": "วิชาบังคับก่อน",
+        "n_items": 19,
+        "cer": 0.744898,
+        "wer": null,
+        "exact_match_acc": 0.263158,
+        "n_sub": 0,
+        "n_del": 73,
+        "n_ins": 0,
+        "n_missing": 14,
+        "n_hallucinated": 0,
+        "n_ref_chars": 98,
+        "error_samples": [
+          {
+            "key": "06026200",
+            "gt": "ไม่มี",
+            "pred": "None"
+          },
+          {
+            "key": "06026202",
+            "gt": "ไม่มี",
+            "pred": "None"
+          },
+          {
+            "key": "06066101",
+            "gt": "ไม่มี",
+            "pred": "None"
+          },
+          {
+            "key": "90641003",
+            "gt": "ไม่มี",
+            "pred": "None"
+          },
+          {
+            "key": "90644007",
+            "gt": "ไม่มี",
+            "pred": "None"
+          }
+        ]
+      },
+      "flexible": {
+        "label": "ปี/ภาคยืดหยุ่น",
+        "n_items": 19,
+        "cer": 0.0,
+        "wer": null,
+        "exact_match_acc": 1.0,
+        "n_sub": 0,
+        "n_del": 0,
+        "n_ins": 0,
+        "n_missing": 0,
+        "n_hallucinated": 0,
+        "n_ref_chars": 0,
+        "error_samples": []
+      }
+    },
+    "overall_micro_cer": 0.916309,
+    "alignment": {
+      "matched": 19,
+      "missed": 71,
+      "spurious": 1,
+      "precision": 0.95,
+      "recall": 0.2111,
+      "f1": 0.3455,
+      "gt_total": 90,
+      "pred_total": 20,
+      "missed_codes": [
+        "06016401",
+        "90644xxx",
+        "06026204",
+        "06026207",
+        "06026208",
+        "06026209",
+        "06026210",
+        "06066102",
+        "06066301",
+        "06026211",
+        "06026212",
+        "06026xxx",
+        "06026xxx",
+        "9064xxxx",
+        "90644042",
+        "06026213",
+        "06026214",
+        "06026xxx",
+        "06026xxx",
+        "06066100"
+      ],
+      "spurious_codes": [
+        "90644xxx"
+      ]
+    }
+  },
+  "vlm": {
+    "tokenizer": "pythainlp/newmm",
+    "attributes": {
+      "code": {
+        "label": "รหัสวิชา",
+        "n_items": 90,
+        "cer": 1.0,
+        "wer": null,
+        "exact_match_acc": 0.0,
+        "n_sub": 0,
+        "n_del": 732,
+        "n_ins": 0,
+        "n_missing": 90,
+        "n_hallucinated": 0,
+        "n_ref_chars": 732,
+        "error_samples": [
+          {
+            "key": "06016401 [ตกแถว]",
+            "gt": "06016401",
+            "pred": ""
+          },
+          {
+            "key": "06026200 [ตกแถว]",
+            "gt": "06026200",
+            "pred": ""
+          },
+          {
+            "key": "06026202 [ตกแถว]",
+            "gt": "06026202",
+            "pred": ""
+          },
+          {
+            "key": "06066101 [ตกแถว]",
+            "gt": "06066101",
+            "pred": ""
+          },
+          {
+            "key": "06066303 [ตกแถว]",
+            "gt": "06066303",
+            "pred": ""
+          }
+        ]
+      },
+      "name_th": {
+        "label": "ชื่อวิชา (ไทย) ⭐",
+        "n_items": 90,
+        "cer": 1.0,
+        "wer": 1.0,
+        "exact_match_acc": 0.0,
+        "n_sub": 0,
+        "n_del": 2767,
+        "n_ins": 0,
+        "n_missing": 90,
+        "n_hallucinated": 0,
+        "n_ref_chars": 2767,
+        "error_samples": [
+          {
+            "key": "06016401 [ตกแถว]",
+            "gt": "คณิตศาสตร์สำหรับเทคโนโลยีสารสนเทศ",
+            "pred": ""
+          },
+          {
+            "key": "06026200 [ตกแถว]",
+            "gt": "แคลคูลัส 1",
+            "pred": ""
+          },
+          {
+            "key": "06026202 [ตกแถว]",
+            "gt": "พีชคณิตเชิงเส้น",
+            "pred": ""
+          },
+          {
+            "key": "06066101 [ตกแถว]",
+            "gt": "พื้นฐานทางธุรกิจสำหรับเทคโนโลยีสารสนเทศ",
+            "pred": ""
+          },
+          {
+            "key": "06066303 [ตกแถว]",
+            "gt": "การแก้ปัญหาและโปรแกรมคอมพิวเตอร์",
+            "pred": ""
+          }
+        ]
+      },
+      "name_en": {
+        "label": "ชื่อวิชา (อังกฤษ) ⭐",
+        "n_items": 90,
+        "cer": 1.0,
+        "wer": 1.0,
+        "exact_match_acc": 0.0,
+        "n_sub": 0,
+        "n_del": 2659,
+        "n_ins": 0,
+        "n_missing": 90,
+        "n_hallucinated": 0,
+        "n_ref_chars": 2659,
+        "error_samples": [
+          {
+            "key": "06016401 [ตกแถว]",
+            "gt": "MATHEMATICS FOR INFORMATION TECHNOLOGY",
+            "pred": ""
+          },
+          {
+            "key": "06026200 [ตกแถว]",
+            "gt": "CALCULUS 1",
+            "pred": ""
+          },
+          {
+            "key": "06026202 [ตกแถว]",
+            "gt": "LINEAR ALGEBRA",
+            "pred": ""
+          },
+          {
+            "key": "06066101 [ตกแถว]",
+            "gt": "BUSINESS FUNDAMENTALS FOR INFORMATION\nTECHNOLOGY",
+            "pred": ""
+          },
+          {
+            "key": "06066303 [ตกแถว]",
+            "gt": "PROBLEM SOLVING AND COMPUTER\nPROGRAMMING",
+            "pred": ""
+          }
+        ]
+      },
+      "credits": {
+        "label": "หน่วยกิต",
+        "n_items": 90,
+        "cer": 1.0,
+        "wer": null,
+        "exact_match_acc": 0.0,
+        "n_sub": 0,
+        "n_del": 831,
+        "n_ins": 0,
+        "n_missing": 90,
+        "n_hallucinated": 0,
+        "n_ref_chars": 831,
+        "error_samples": [
+          {
+            "key": "06016401 [ตกแถว]",
+            "gt": "3(3-0-6)",
+            "pred": ""
+          },
+          {
+            "key": "06026200 [ตกแถว]",
+            "gt": "3(3-0-6)",
+            "pred": ""
+          },
+          {
+            "key": "06026202 [ตกแถว]",
+            "gt": "3(3-0-6)",
+            "pred": ""
+          },
+          {
+            "key": "06066101 [ตกแถว]",
+            "gt": "3(3-0-6)",
+            "pred": ""
+          },
+          {
+            "key": "06066303 [ตกแถว]",
+            "gt": "3(2-2-5)",
+            "pred": ""
+          }
+        ]
+      },
+      "year_sem": {
+        "label": "ปี/ภาค",
+        "n_items": 90,
+        "cer": 1.0,
+        "wer": null,
+        "exact_match_acc": 0.0,
+        "n_sub": 0,
+        "n_del": 270,
+        "n_ins": 0,
+        "n_missing": 90,
+        "n_hallucinated": 0,
+        "n_ref_chars": 270,
+        "error_samples": [
+          {
+            "key": "06016401 [ตกแถว]",
+            "gt": "1/1",
+            "pred": ""
+          },
+          {
+            "key": "06026200 [ตกแถว]",
+            "gt": "1/1",
+            "pred": ""
+          },
+          {
+            "key": "06026202 [ตกแถว]",
+            "gt": "1/1",
+            "pred": ""
+          },
+          {
+            "key": "06066101 [ตกแถว]",
+            "gt": "1/1",
+            "pred": ""
+          },
+          {
+            "key": "06066303 [ตกแถว]",
+            "gt": "1/1",
+            "pred": ""
+          }
+        ]
+      },
+      "category": {
+        "label": "หมวดวิชา",
+        "n_items": 90,
+        "cer": 1.0,
+        "wer": null,
+        "exact_match_acc": 0.0,
+        "n_sub": 0,
+        "n_del": 1238,
+        "n_ins": 0,
+        "n_missing": 90,
+        "n_hallucinated": 0,
+        "n_ref_chars": 1238,
+        "error_samples": [
+          {
+            "key": "06016401 [ตกแถว]",
+            "gt": "หมวดวิชาเฉพาะ",
+            "pred": ""
+          },
+          {
+            "key": "06026200 [ตกแถว]",
+            "gt": "หมวดวิชาเฉพาะ",
+            "pred": ""
+          },
+          {
+            "key": "06026202 [ตกแถว]",
+            "gt": "หมวดวิชาเฉพาะ",
+            "pred": ""
+          },
+          {
+            "key": "06066101 [ตกแถว]",
+            "gt": "หมวดวิชาเฉพาะ",
+            "pred": ""
+          },
+          {
+            "key": "06066303 [ตกแถว]",
+            "gt": "หมวดวิชาเฉพาะ",
+            "pred": ""
+          }
+        ]
+      },
+      "ctype": {
+        "label": "บังคับ/เลือก",
+        "n_items": 90,
+        "cer": 1.0,
+        "wer": null,
+        "exact_match_acc": 0.0,
+        "n_sub": 0,
+        "n_del": 486,
+        "n_ins": 0,
+        "n_missing": 90,
+        "n_hallucinated": 0,
+        "n_ref_chars": 486,
+        "error_samples": [
+          {
+            "key": "06016401 [ตกแถว]",
+            "gt": "บังคับ",
+            "pred": ""
+          },
+          {
+            "key": "06026200 [ตกแถว]",
+            "gt": "บังคับ",
+            "pred": ""
+          },
+          {
+            "key": "06026202 [ตกแถว]",
+            "gt": "บังคับ",
+            "pred": ""
+          },
+          {
+            "key": "06066101 [ตกแถว]",
+            "gt": "บังคับ",
+            "pred": ""
+          },
+          {
+            "key": "06066303 [ตกแถว]",
+            "gt": "บังคับ",
+            "pred": ""
+          }
+        ]
+      }
+    },
+    "overall_micro_cer": 1.0,
+    "alignment": {
+      "matched": 0,
+      "missed": 90,
+      "spurious": 7,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "gt_total": 90,
+      "pred_total": 7,
+      "missed_codes": [
+        "06016401",
+        "06026200",
+        "06026202",
+        "06066101",
+        "06066303",
+        "90641001",
+        "90641003",
+        "90644007",
+        "06026201",
+        "06026203",
+        "06026205",
+        "06066001",
+        "90641002",
+        "90642033",
+        "90644008",
+        "06026206",
+        "06066000",
+        "06066300",
+        "06066302",
+        "06066304"
+      ],
+      "spurious_codes": [
+        "06026201",
+        "06026203",
+        "06026205",
+        "06066001",
+        "90641002",
+        "90642033",
+        "90644008"
+      ]
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "program": "BSc in Data Science and Business Analytics",
+  "plan": "ปีที่ 1 ภาคการศึกษาที่ 2 มคอ. 2",
+  "courses": [
+    {
+      "code": "06026201",
+      "name_th": "แคลคูลัส 2 CALCULUS 2",
+      "credits": "3 (3-0-6)"
+    },
+    {
+      "code": "06026203",
+      "name_th": "การโปรแกรมคอมพิวเตอร์ COMPUTER PROGRAMMING",
+      "credits": "3 (2-2-5)"
+    },
+    {
+      "code": "06026205",
+      "name_th": "การตลาดเบื้องต้น INTRODUCTION TO MARKETING",
+      "credits": "3 (3-0-6)"
+    },
+    {
+      "code": "06066001",
+      "name_th": "ความน่าจะเป็นและสถิติ PROBABILITY AND STATISTICS",
+      "credits": "3 (3-0-6)"
+    },
+    {
+      "code": "90641002",
+      "name_th": "ความฉลาดทางดิจิทัล DIGITAL INTELLIGENCE QUOTIENT",
+      "credits": "3 (3-0-6)"
+    },
+    {
+      "code": "90642033",
+      "name_th": "กลุ่มวิชาที่กำหนดโดยคณะ* กฎหมายสำหรับคนรุ่นใหม่ LAW FOR NEW GENERATION",
+      "credits": "3 (3-0-6)"
+    },
+    {
+      "code": "90644008",
+      "name_th": "ภาษาอังกฤษพื้นฐาน 2 FOUNDATION ENGLISH 2",
+      "credits": "3 (3-0-6)"
+    }
+  ],
+  "_meta": {
+    "pipeline": "vlm",
+    "ocr_model": "scb10x/typhoon-ocr1.5-3b",
+    "text_model": "qwen3:4b",
+    "elapsed_sec": 41.5
+  }
+}

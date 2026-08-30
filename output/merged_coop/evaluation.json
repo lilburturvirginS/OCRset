@@ -1,0 +1,422 @@
+{
+  "text": {
+    "tokenizer": "pythainlp/newmm",
+    "attributes": {
+      "code": {
+        "label": "รหัสวิชา",
+        "n_items": 90,
+        "cer": 0.377049,
+        "wer": null,
+        "exact_match_acc": 0.633333,
+        "n_sub": 0,
+        "n_del": 276,
+        "n_ins": 0,
+        "n_missing": 33,
+        "n_hallucinated": 0,
+        "n_ref_chars": 732,
+        "error_samples": [
+          {
+            "key": "06016401 [ตกแถว]",
+            "gt": "06016401",
+            "pred": ""
+          },
+          {
+            "key": "90644xxx [ตกแถว]",
+            "gt": "90644xxx",
+            "pred": ""
+          },
+          {
+            "key": "9064xxxx [ตกแถว]",
+            "gt": "9064xxxx",
+            "pred": ""
+          },
+          {
+            "key": "xxxxxxxx [ตกแถว]",
+            "gt": "xxxxxxxx",
+            "pred": ""
+          },
+          {
+            "key": "xxxxxxxx [ตกแถว]",
+            "gt": "xxxxxxxx",
+            "pred": ""
+          }
+        ]
+      },
+      "name_th": {
+        "label": "ชื่อวิชา (ไทย) ⭐",
+        "n_items": 90,
+        "cer": 0.511384,
+        "wer": 0.708423,
+        "exact_match_acc": 0.322222,
+        "n_sub": 109,
+        "n_del": 1285,
+        "n_ins": 21,
+        "n_missing": 33,
+        "n_hallucinated": 0,
+        "n_ref_chars": 2767,
+        "error_samples": [
+          {
+            "key": "06066303",
+            "gt": "การแก้ปัญหาและโปรแกรมคอมพิวเตอร์",
+            "pred": "การแก้ปัญหาและการโปรแกรมคอมพิวเตอร์"
+          },
+          {
+            "key": "90641001",
+            "gt": "โรงเรียนสร้างเสน่าห์",
+            "pred": "โรงเรียนสร้างเสน่ห์"
+          },
+          {
+            "key": "06026205",
+            "gt": "การตลาดเบื้อต้น",
+            "pred": "การตลาดเบื้องต้น"
+          },
+          {
+            "key": "90642033",
+            "gt": "กฎหมายสำหรับคนรุ่นใหม่",
+            "pred": "กลุ่มวิชาที่กำหนดโดยคณะ*"
+          },
+          {
+            "key": "06066304",
+            "gt": "การวิเคราะห์และอออกแบบระบบสารสนเทศ",
+            "pred": "การวิเคราะห์และออกแบบระบบสารสนเทศ"
+          }
+        ]
+      },
+      "name_en": {
+        "label": "ชื่อวิชา (อังกฤษ) ⭐",
+        "n_items": 90,
+        "cer": 0.813088,
+        "wer": 0.825871,
+        "exact_match_acc": 0.2,
+        "n_sub": 0,
+        "n_del": 2162,
+        "n_ins": 0,
+        "n_missing": 72,
+        "n_hallucinated": 0,
+        "n_ref_chars": 2659,
+        "error_samples": [
+          {
+            "key": "06026200",
+            "gt": "CALCULUS 1",
+            "pred": "None"
+          },
+          {
+            "key": "06026202",
+            "gt": "LINEAR ALGEBRA",
+            "pred": "None"
+          },
+          {
+            "key": "06066101",
+            "gt": "BUSINESS FUNDAMENTALS FOR INFORMATION\nTECHNOLOGY",
+            "pred": "None"
+          },
+          {
+            "key": "90641003",
+            "gt": "SPORTS AND RECREATIONAL ACTIVITIES",
+            "pred": "None"
+          },
+          {
+            "key": "90644007",
+            "gt": "FOUNDATION ENGLISH 1",
+            "pred": "None"
+          }
+        ]
+      },
+      "credits": {
+        "label": "หน่วยกิต",
+        "n_items": 90,
+        "cer": 0.451264,
+        "wer": null,
+        "exact_match_acc": 0.544444,
+        "n_sub": 12,
+        "n_del": 363,
+        "n_ins": 0,
+        "n_missing": 33,
+        "n_hallucinated": 0,
+        "n_ref_chars": 831,
+        "error_samples": [
+          {
+            "key": "06026xxx",
+            "gt": "3(3-0-6) หรือ 3(2-2-5)",
+            "pred": "3(3-0-6)"
+          },
+          {
+            "key": "06026xxx",
+            "gt": "3(3-0-6) หรือ 3(2-2-5)",
+            "pred": "3(2-2-5)"
+          },
+          {
+            "key": "06026xxx",
+            "gt": "3(3-0-6) หรือ 3(2-2-5)",
+            "pred": "3(3-0-6)"
+          },
+          {
+            "key": "06026xxx",
+            "gt": "3(3-0-6) หรือ 3(2-2-5)",
+            "pred": "3(2-2-5)"
+          },
+          {
+            "key": "06026250",
+            "gt": "3(2-2-5)",
+            "pred": "3(3-0-6)"
+          }
+        ]
+      },
+      "year_sem": {
+        "label": "ปี/ภาค",
+        "n_items": 90,
+        "cer": 0.366667,
+        "wer": null,
+        "exact_match_acc": 0.633333,
+        "n_sub": 0,
+        "n_del": 99,
+        "n_ins": 0,
+        "n_missing": 33,
+        "n_hallucinated": 0,
+        "n_ref_chars": 270,
+        "error_samples": [
+          {
+            "key": "06016401 [ตกแถว]",
+            "gt": "1/1",
+            "pred": ""
+          },
+          {
+            "key": "90644xxx [ตกแถว]",
+            "gt": "2/1",
+            "pred": ""
+          },
+          {
+            "key": "9064xxxx [ตกแถว]",
+            "gt": "4/1",
+            "pred": ""
+          },
+          {
+            "key": "xxxxxxxx [ตกแถว]",
+            "gt": "4/1",
+            "pred": ""
+          },
+          {
+            "key": "xxxxxxxx [ตกแถว]",
+            "gt": "4/1",
+            "pred": ""
+          }
+        ]
+      },
+      "category": {
+        "label": "หมวดวิชา",
+        "n_items": 90,
+        "cer": 0.989499,
+        "wer": null,
+        "exact_match_acc": 0.011111,
+        "n_sub": 0,
+        "n_del": 1225,
+        "n_ins": 0,
+        "n_missing": 89,
+        "n_hallucinated": 0,
+        "n_ref_chars": 1238,
+        "error_samples": [
+          {
+            "key": "06026200",
+            "gt": "หมวดวิชาเฉพาะ",
+            "pred": "None"
+          },
+          {
+            "key": "06026202",
+            "gt": "หมวดวิชาเฉพาะ",
+            "pred": "None"
+          },
+          {
+            "key": "06066101",
+            "gt": "หมวดวิชาเฉพาะ",
+            "pred": "None"
+          },
+          {
+            "key": "90641003",
+            "gt": "หมวดวิชาศึกษาทั่วไป",
+            "pred": "None"
+          },
+          {
+            "key": "90644007",
+            "gt": "หมวดวิชาศึกษาทั่วไป",
+            "pred": "None"
+          }
+        ]
+      },
+      "ctype": {
+        "label": "บังคับ/เลือก",
+        "n_items": 90,
+        "cer": 0.987654,
+        "wer": null,
+        "exact_match_acc": 0.011111,
+        "n_sub": 0,
+        "n_del": 480,
+        "n_ins": 0,
+        "n_missing": 89,
+        "n_hallucinated": 0,
+        "n_ref_chars": 486,
+        "error_samples": [
+          {
+            "key": "06026200",
+            "gt": "บังคับ",
+            "pred": "None"
+          },
+          {
+            "key": "06026202",
+            "gt": "บังคับ",
+            "pred": "None"
+          },
+          {
+            "key": "06066101",
+            "gt": "บังคับ",
+            "pred": "None"
+          },
+          {
+            "key": "90641003",
+            "gt": "บังคับ",
+            "pred": "None"
+          },
+          {
+            "key": "90644007",
+            "gt": "บังคับ",
+            "pred": "None"
+          }
+        ]
+      },
+      "prereq": {
+        "label": "วิชาบังคับก่อน",
+        "n_items": 57,
+        "cer": 0.133333,
+        "wer": null,
+        "exact_match_acc": 0.912281,
+        "n_sub": 25,
+        "n_del": 15,
+        "n_ins": 0,
+        "n_missing": 0,
+        "n_hallucinated": 0,
+        "n_ref_chars": 300,
+        "error_samples": [
+          {
+            "key": "06026201",
+            "gt": "06026200",
+            "pred": "ไม่มี"
+          },
+          {
+            "key": "06066102",
+            "gt": "06066101",
+            "pred": "ไม่มี"
+          },
+          {
+            "key": "06026212",
+            "gt": "06066300",
+            "pred": "ไม่มี"
+          },
+          {
+            "key": "06026213",
+            "gt": "06066300",
+            "pred": "ไม่มี"
+          },
+          {
+            "key": "06026215",
+            "gt": "06026214",
+            "pred": "ไม่มี"
+          }
+        ]
+      },
+      "flexible": {
+        "label": "ปี/ภาคยืดหยุ่น",
+        "n_items": 57,
+        "cer": 1.0,
+        "wer": null,
+        "exact_match_acc": 0.684211,
+        "n_sub": 0,
+        "n_del": 198,
+        "n_ins": 0,
+        "n_missing": 18,
+        "n_hallucinated": 0,
+        "n_ref_chars": 198,
+        "error_samples": [
+          {
+            "key": "06026256",
+            "gt": "3/1, 3/2, 4/1",
+            "pred": "None"
+          },
+          {
+            "key": "06026258",
+            "gt": "3/1, 3/2, 4/1",
+            "pred": "None"
+          },
+          {
+            "key": "06026241",
+            "gt": "3/1, 3/2, 4/1",
+            "pred": "None"
+          },
+          {
+            "key": "06026242",
+            "gt": "3/1, 3/2, 4/1",
+            "pred": "None"
+          },
+          {
+            "key": "06026243",
+            "gt": "3/1, 3/2, 4/1",
+            "pred": "None"
+          }
+        ]
+      }
+    },
+    "overall_micro_cer": 0.661323,
+    "alignment": {
+      "matched": 57,
+      "missed": 33,
+      "spurious": 39,
+      "precision": 0.5938,
+      "recall": 0.6333,
+      "f1": 0.6129,
+      "gt_total": 90,
+      "pred_total": 96,
+      "missed_codes": [
+        "06016401",
+        "90644xxx",
+        "9064xxxx",
+        "xxxxxxxx",
+        "xxxxxxxx",
+        "06026259 หรือ 06026260",
+        "06026216",
+        "06026217",
+        "06026218",
+        "06026219",
+        "06026220",
+        "06026221",
+        "06026222",
+        "06026223",
+        "06026224",
+        "06026225",
+        "06026226",
+        "06026227",
+        "06026228",
+        "06026229"
+      ],
+      "spurious_codes": [
+        "90644xxx",
+        "06026xxx",
+        "06026xxx",
+        "06026xxx",
+        "06026xxx",
+        "06026xxx",
+        "06026xxx",
+        "06026xxx",
+        "06026xxx",
+        "9064xxxx",
+        "xxxxxxx",
+        "xxxxxxx",
+        "06026259",
+        "06026260",
+        "06026226",
+        "06026225",
+        "06026224",
+        "06026223",
+        "06026222",
+        "06026221"
+      ]
+    }
+  }
+}

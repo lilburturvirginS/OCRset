@@ -1,0 +1,285 @@
+{
+  "ocr_source": "outputs/dsba_curriculum_ocr.json",
+  "ground_truth_files": {
+    "DSBA_academic_plan_coop.json": {
+      "field_level": {
+        "matched_courses": 79,
+        "per_field": {
+          "name_en": {
+            "checked": 79,
+            "correct": 79,
+            "accuracy": 1.0
+          },
+          "credits": {
+            "checked": 79,
+            "correct": 79,
+            "accuracy": 1.0
+          },
+          "category": {
+            "checked": 79,
+            "correct": 79,
+            "accuracy": 1.0
+          },
+          "type": {
+            "checked": 79,
+            "correct": 79,
+            "accuracy": 1.0
+          },
+          "prerequisite": {
+            "checked": 79,
+            "correct": 77,
+            "accuracy": 0.9747
+          }
+        }
+      },
+      "page_level": {
+        "total_gt_courses": 80,
+        "found_on_a_page": 79,
+        "page_recall": 0.9875,
+        "distinct_pages_used": 7,
+        "page_range": "16-22",
+        "missing_codes": [
+          "06016401"
+        ]
+      },
+      "category_level": {
+        "หมวดวิชาเฉพาะ": {
+          "course_count": 71,
+          "per_field": {
+            "name_en": {
+              "checked": 71,
+              "correct": 71,
+              "accuracy": 1.0
+            },
+            "credits": {
+              "checked": 71,
+              "correct": 71,
+              "accuracy": 1.0
+            },
+            "category": {
+              "checked": 71,
+              "correct": 71,
+              "accuracy": 1.0
+            },
+            "type": {
+              "checked": 71,
+              "correct": 71,
+              "accuracy": 1.0
+            },
+            "prerequisite": {
+              "checked": 71,
+              "correct": 70,
+              "accuracy": 0.9859
+            }
+          }
+        },
+        "หมวดวิชาศึกษาทั่วไป": {
+          "course_count": 8,
+          "per_field": {
+            "name_en": {
+              "checked": 8,
+              "correct": 8,
+              "accuracy": 1.0
+            },
+            "credits": {
+              "checked": 8,
+              "correct": 8,
+              "accuracy": 1.0
+            },
+            "category": {
+              "checked": 8,
+              "correct": 8,
+              "accuracy": 1.0
+            },
+            "type": {
+              "checked": 8,
+              "correct": 8,
+              "accuracy": 1.0
+            },
+            "prerequisite": {
+              "checked": 8,
+              "correct": 7,
+              "accuracy": 0.875
+            }
+          }
+        }
+      }
+    },
+    "general_education_ground_truth.json": {
+      "field_level": {
+        "matched_courses": 266,
+        "per_field": {
+          "name_en": {
+            "checked": 266,
+            "correct": 237,
+            "accuracy": 0.891
+          },
+          "credits": {
+            "checked": 266,
+            "correct": 265,
+            "accuracy": 0.9962
+          },
+          "category": {
+            "checked": 266,
+            "correct": 266,
+            "accuracy": 1.0
+          },
+          "type": {
+            "checked": 266,
+            "correct": 258,
+            "accuracy": 0.9699
+          },
+          "prerequisite": {
+            "checked": 0,
+            "correct": 0,
+            "accuracy": null
+          }
+        }
+      },
+      "page_level": {
+        "total_gt_courses": 266,
+        "found_on_a_page": 266,
+        "page_recall": 1.0,
+        "distinct_pages_used": 18,
+        "page_range": "16-270",
+        "missing_codes": []
+      },
+      "category_level": {
+        "หมวดวิชาศึกษาทั่วไป": {
+          "course_count": 266,
+          "per_field": {
+            "name_en": {
+              "checked": 266,
+              "correct": 237,
+              "accuracy": 0.891
+            },
+            "credits": {
+              "checked": 266,
+              "correct": 265,
+              "accuracy": 0.9962
+            },
+            "category": {
+              "checked": 266,
+              "correct": 266,
+              "accuracy": 1.0
+            },
+            "type": {
+              "checked": 266,
+              "correct": 258,
+              "accuracy": 0.9699
+            },
+            "prerequisite": {
+              "checked": 0,
+              "correct": 0,
+              "accuracy": null
+            }
+          }
+        }
+      }
+    },
+    "DSBA_academic_plan_no_coop.json": {
+      "field_level": {
+        "matched_courses": 79,
+        "per_field": {
+          "name_en": {
+            "checked": 79,
+            "correct": 79,
+            "accuracy": 1.0
+          },
+          "credits": {
+            "checked": 79,
+            "correct": 79,
+            "accuracy": 1.0
+          },
+          "category": {
+            "checked": 79,
+            "correct": 79,
+            "accuracy": 1.0
+          },
+          "type": {
+            "checked": 79,
+            "correct": 79,
+            "accuracy": 1.0
+          },
+          "prerequisite": {
+            "checked": 79,
+            "correct": 77,
+            "accuracy": 0.9747
+          }
+        }
+      },
+      "page_level": {
+        "total_gt_courses": 80,
+        "found_on_a_page": 79,
+        "page_recall": 0.9875,
+        "distinct_pages_used": 7,
+        "page_range": "16-22",
+        "missing_codes": [
+          "06016401"
+        ]
+      },
+      "category_level": {
+        "หมวดวิชาเฉพาะ": {
+          "course_count": 71,
+          "per_field": {
+            "name_en": {
+              "checked": 71,
+              "correct": 71,
+              "accuracy": 1.0
+            },
+            "credits": {
+              "checked": 71,
+              "correct": 71,
+              "accuracy": 1.0
+            },
+            "category": {
+              "checked": 71,
+              "correct": 71,
+              "accuracy": 1.0
+            },
+            "type": {
+              "checked": 71,
+              "correct": 71,
+              "accuracy": 1.0
+            },
+            "prerequisite": {
+              "checked": 71,
+              "correct": 70,
+              "accuracy": 0.9859
+            }
+          }
+        },
+        "หมวดวิชาศึกษาทั่วไป": {
+          "course_count": 8,
+          "per_field": {
+            "name_en": {
+              "checked": 8,
+              "correct": 8,
+              "accuracy": 1.0
+            },
+            "credits": {
+              "checked": 8,
+              "correct": 8,
+              "accuracy": 1.0
+            },
+            "category": {
+              "checked": 8,
+              "correct": 8,
+              "accuracy": 1.0
+            },
+            "type": {
+              "checked": 8,
+              "correct": 8,
+              "accuracy": 1.0
+            },
+            "prerequisite": {
+              "checked": 8,
+              "correct": 7,
+              "accuracy": 0.875
+            }
+          }
+        }
+      }
+    }
+  }
+}

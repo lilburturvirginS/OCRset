@@ -1,0 +1,56 @@
+{
+  "courses": [
+    {
+      "code": "06026200",
+      "name_th": "ชื่อวิชา: ไม่ได้ระบุ",
+      "credits": "3(3-0-6)",
+      "year": 1,
+      "semester": 1,
+      "prerequisite": "ไม่มี"
+    },
+    {
+      "code": "06026201",
+      "name_th": "ชื่อวิชา: ไม่ได้ระบุ",
+      "credits": "3(3-0-6)",
+      "year": 1,
+      "semester": 1,
+      "prerequisite": "ไม่มี"
+    },
+    {
+      "code": "06026202",
+      "name_th": "ชื่อวิชา: ไม่ได้ระบุ",
+      "credits": "3(3-0-6)",
+      "year": 1,
+      "semester": 1,
+      "prerequisite": "ไม่มี"
+    },
+    {
+      "code": "06026203",
+      "name_th": "ชื่อวิชา: ไม่ได้ระบุ",
+      "credits": "3(3-0-6)",
+      "year": 1,
+      "semester": 2,
+      "prerequisite": "ไม่มี"
+    },
+    {
+      "code": "06026204",
+      "name_th": "ชื่อวิชา: ไม่ได้ระบุ",
+      "credits": "3(3-0-6)",
+      "year": 1,
+      "semester": 2,
+      "prerequisite": "ไม่มี"
+    },
+    {
+      "code": "06026205",
+      "name_th": "ชื่อวิชา: ไม่ได้ระบุ",
+      "credits": "3(3-0-6)",
+      "year": 2,
+      "semester": 1,
+      "prerequisite": "ไม่มี"
+    }
+  ],
+  "_meta": {
+    "chunk": 3,
+    "elapsed_sec": 51.2
+  }
+}

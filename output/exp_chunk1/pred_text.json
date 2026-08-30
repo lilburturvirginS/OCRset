@@ -1,0 +1,148 @@
+{
+  "courses": [
+    {
+      "code": "06026200",
+      "name_th": "แคลคูลัส 1",
+      "credits": "3(3-0-6)",
+      "prerequisite": "ไม่มี",
+      "note": ""
+    },
+    {
+      "code": "06026202",
+      "name_th": "แคลคูลัส 2",
+      "credits": "3(3-0-6)",
+      "prerequisite": "ไม่มี",
+      "note": ""
+    },
+    {
+      "code": "06066101",
+      "name_th": "แคลคูลัส 3",
+      "credits": "3(3-0-6)",
+      "prerequisite": "ไม่มี",
+      "note": ""
+    },
+    {
+      "code": "06066303",
+      "name_th": "แคลคูลัส 4",
+      "credits": "3(3-0-6)",
+      "prerequisite": "ไม่มี",
+      "note": ""
+    },
+    {
+      "code": "90641001",
+      "name_th": "แคลคูลัส 5",
+      "credits": "3(3-0-6)",
+      "prerequisite": "ไม่มี",
+      "note": ""
+    },
+    {
+      "code": "90641003",
+      "name_th": "แคลคูลัส 6",
+      "credits": "3(3-0-6)",
+      "prerequisite": "ไม่มี",
+      "note": ""
+    },
+    {
+      "code": "90644007",
+      "name_th": "แคลคูลัส 7",
+      "credits": "3(3-0-6)",
+      "prerequisite": "ไม่มี",
+      "note": ""
+    },
+    {
+      "code": "06026201",
+      "name_th": "แคลคูลัส 2",
+      "credits": "3(3-0-6)",
+      "prerequisite": "ไม่มี",
+      "flexible_year_semester": null
+    },
+    {
+      "code": "06026203",
+      "name_th": "แคลคูลัส 2",
+      "credits": "3(2-2-5)",
+      "prerequisite": "ไม่มี",
+      "flexible_year_semester": null
+    },
+    {
+      "code": "06026205",
+      "name_th": "แคลคูลัส 2",
+      "credits": "3(3-0-6)",
+      "prerequisite": "ไม่มี",
+      "flexible_year_semester": null
+    },
+    {
+      "code": "06066001",
+      "name_th": "แคลคูลัส 2",
+      "credits": "3(3-0-6)",
+      "prerequisite": "ไม่มี",
+      "flexible_year_semester": null
+    },
+    {
+      "code": "90641002",
+      "name_th": "แคลคูลัส 2",
+      "credits": "3(3-0-6)",
+      "prerequisite": "ไม่มี",
+      "flexible_year_semester": null
+    },
+    {
+      "code": "90642033",
+      "name_th": "แคลคูลัส 2",
+      "credits": "3(3-0-6)",
+      "prerequisite": "ไม่มี",
+      "flexible_year_semester": null
+    },
+    {
+      "code": "90644008",
+      "name_th": "แคลคูลัส 2",
+      "credits": "3(3-0-6)",
+      "prerequisite": "ไม่มี",
+      "flexible_year_semester": null
+    },
+    {
+      "code": "06026206",
+      "name_th": "วิชาที่ 1",
+      "credits": "3 (2-2-5)",
+      "year": 1,
+      "semester": 2
+    },
+    {
+      "code": "06066000",
+      "name_th": "วิชาที่ 2",
+      "credits": "3 (2-2-5)",
+      "year": 1,
+      "semester": 2
+    },
+    {
+      "code": "06066300",
+      "name_th": "วิชาที่ 3",
+      "credits": "3 (2-2-5)",
+      "year": 1,
+      "semester": 2
+    },
+    {
+      "code": "06066302",
+      "name_th": "วิชาที่ 4",
+      "credits": "3 (2-2-5)",
+      "year": 1,
+      "semester": 2
+    },
+    {
+      "code": "06066304",
+      "name_th": "วิชาที่ 5",
+      "credits": "3 (2-2-5)",
+      "year": 1,
+      "semester": 2
+    },
+    {
+      "code": "90644xxx",
+      "name_th": "วิชาเลือก",
+      "credits": "3 (2-2-5)",
+      "year": 0,
+      "semester": 0
+    }
+  ],
+  "_meta": {
+    "chunk": 1,
+    "elapsed_sec": 165.9
+  }
+}

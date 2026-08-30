@@ -1,0 +1,29 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore outputs pages but keep JSON, CSV, and TXT outputs
+outputs/pages/
+!outputs/**/*.json
+!outputs/**/*.csv
+!outputs/**/*.txt
+!outputs/lab6_final_report.txt
+
+*.egg-info/
+
+# Environment variables (API keys, secrets)
+.env
+.env.*
+!.env.example
+
+# Ignore large raw input data files but keep ground truth
+data/input/
+!data/ground_truth/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
