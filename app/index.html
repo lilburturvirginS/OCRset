@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Q&A — ระบบถาม-ตอบหลักสูตร</title>
+  <meta name="description" content="ระบบถามตอบข้อมูลหลักสูตรสาขาวิชาต่างๆ ด้วย AI">
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+</head>
+<body>
+
+<!-- ── Sidebar ──────────────────────────────────────────── -->
+<aside class="sidebar">
+  <div class="sidebar-header">
+    <div class="logo">
+      <div class="logo-icon">🎓</div>
+      <div>
+        <div class="logo-text">Curriculum Q&A</div>
+        <div class="logo-sub">ISD 2026 · KMITL</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-label">เลือกสาขาวิชา</div>
+
+  <div class="program-list" id="programList">
+    <!-- Populated by JS -->
+    <div style="padding:12px;color:var(--text-muted);font-size:12px;">กำลังโหลด...</div>
+  </div>
+
+  <div class="sidebar-footer">
+    <div class="status-indicator">
+      <div class="status-dot" id="statusDot"></div>
+      <span id="statusText">กำลังตรวจสอบ...</span>
+    </div>
+  </div>
+</aside>
+
+<!-- ── Main ─────────────────────────────────────────────── -->
+<main class="main">
+
+  <!-- Header -->
+  <header class="chat-header">
+    <div class="header-prog">
+      <div class="header-prog-icon" id="headerIcon">🎓</div>
+      <div>
+        <div class="header-prog-name" id="headerName">เลือกสาขาวิชา</div>
+        <div class="header-prog-detail" id="headerDetail">กรุณาเลือกสาขาทางซ้าย</div>
+      </div>
+    </div>
+    <div class="header-actions">
+      <button class="icon-btn" id="clearBtn" title="ล้างการสนทนา" onclick="clearChat()">🗑️</button>
+    </div>
+  </header>
+
+  <!-- Chat Area -->
+  <div class="chat-area" id="chatArea">
+    <!-- Welcome shown when no program selected -->
+    <div class="welcome" id="welcomeState">
+      <div class="welcome-icon">🤖</div>
+      <h1 style="font-size:22px;font-weight:700;">ยินดีต้อนรับ</h1>
+      <p>เลือกสาขาวิชาทางซ้าย แล้วพิมพ์คำถามเกี่ยวกับหลักสูตร<br>เช่น วิชา รหัส หน่วยกิต หรือตารางเรียน</p>
+    </div>
+
+    <!-- Suggested questions shown after program selected -->
+    <div class="welcome" id="programWelcome" style="display:none;">
+      <div class="welcome-icon" id="welcomeIcon">📊</div>
+      <h2 id="welcomeTitle">เลือกสาขาแล้ว</h2>
+      <p id="welcomeDesc">พิมพ์คำถามเกี่ยวกับหลักสูตร หรือเลือกจากคำถามแนะนำด้านล่าง</p>
+      <div class="suggested-grid" id="suggestedGrid"></div>
+    </div>
+  </div>
+
+  <!-- Input Bar -->
+  <div class="input-area">
+    <div class="input-box">
+      <textarea
+        id="questionInput"
+        placeholder="พิมพ์คำถามเกี่ยวกับหลักสูตร เช่น ปีที่ 1 เทอม 1 เรียนกี่หน่วยกิต"
+        rows="1"
+        disabled
+      ></textarea>
+      <button class="send-btn" id="sendBtn" onclick="sendQuestion()" disabled title="ส่งคำถาม (Enter)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="22" y1="2" x2="11" y2="13"></line>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+        </svg>
+      </button>
+    </div>
+    <p class="input-hint">กด <kbd>Enter</kbd> เพื่อส่ง · <kbd>Shift+Enter</kbd> ขึ้นบรรทัดใหม่</p>
+  </div>
+</main>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

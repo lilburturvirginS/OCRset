@@ -1,0 +1,744 @@
+{
+  "qwen3:4b": {
+    "text_to_sql": {
+      "model": "qwen3:4b",
+      "total_questions": 30,
+      "sql_pass_count": 30,
+      "sql_pass_rate": 100.0,
+      "answer_correct_count": 22,
+      "answer_accuracy": 73.3,
+      "avg_seconds_per_query": 0.6,
+      "total_seconds": 18.1,
+      "vram": "4161 / 8151 MB",
+      "details": [
+        {
+          "id": "Q01",
+          "question": "ปีที่ 1 เทอม 1 นักศึกษาต้องเรียนกี่หน่วยกิต",
+          "sql": "SELECT credits FROM v_semester_credits WHERE year=1 AND semester=1 LIMIT 200",
+          "answer": "18 หน่วยกิต",
+          "correct": false,
+          "sql_ok": true,
+          "seconds": 2.99
+        },
+        {
+          "id": "Q02",
+          "question": "ปีที่ 1 เทอม 2 มีกี่หน่วยกิต",
+          "sql": "SELECT credits FROM v_semester_credits WHERE year=1 AND semester=2 LIMIT 200",
+          "answer": "21 หน่วยกิต",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.58
+        },
+        {
+          "id": "Q03",
+          "question": "ปีที่ 2 เทอม 1 นักศึกษาต้องเรียนกี่หน่วยกิต",
+          "sql": "SELECT credits FROM v_semester_credits WHERE year=2 AND semester=1 LIMIT 200",
+          "answer": "15",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.5
+        },
+        {
+          "id": "Q04",
+          "question": "ปีที่ 2 เทอม 2 มีกี่หน่วยกิตรวม",
+          "sql": "SELECT credits FROM v_semester_credits WHERE year=2 AND semester=2 LIMIT 200",
+          "answer": "21 หน่วยกิตรวม",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.61
+        },
+        {
+          "id": "Q05",
+          "question": "ปีที่ 3 เทอม 2 นักศึกษาต้องลงกี่หน่วยกิต",
+          "sql": "SELECT credits FROM v_semester_credits WHERE year=3 AND semester=2 LIMIT 200",
+          "answer": "12",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.52
+        },
+        {
+          "id": "Q06",
+          "question": "หลักสูตรในตาราง program มีหน่วยกิตรวมทั้งหมดกี่หน่วยกิต ดูจาก total_credits",
+          "sql": "SELECT total_credits FROM program LIMIT 200",
+          "answer": "135",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.47
+        },
+        {
+          "id": "Q07",
+          "question": "ปีที่ 4 เทอม 1 เรียนกี่หน่วยกิต",
+          "sql": "SELECT credits FROM v_semester_credits WHERE year=4 AND semester=1 LIMIT 200",
+          "answer": "3 หน่วยกิต",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.59
+        },
+        {
+          "id": "Q08",
+          "question": "ปีที่ 1 เทอม 1 นักศึกษาเรียนกี่วิชา",
+          "sql": "SELECT n_courses FROM v_semester_credits WHERE year=1 AND semester=1 LIMIT 200",
+          "answer": "7 วิชา",
+          "correct": false,
+          "sql_ok": true,
+          "seconds": 0.58
+        },
+        {
+          "id": "Q09",
+          "question": "ปีที่ 1 เทอม 2 มีกี่วิชา",
+          "sql": "SELECT n_courses FROM v_semester_credits WHERE year=1 AND semester=2 LIMIT 200",
+          "answer": "7",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.52
+        },
+        {
+          "id": "Q10",
+          "question": "มีวิชาที่ลงในแผนการศึกษา (plan_item) ทั้งหมดกี่รายการ",
+          "sql": "SELECT COUNT(*) FROM plan_item LIMIT 200",
+          "answer": "มีวิชาทั้งหมด 36 รายการ",
+          "correct": false,
+          "sql_ok": true,
+          "seconds": 0.57
+        },
+        {
+          "id": "Q11",
+          "question": "ปีที่ 3 เทอม 1 เรียนกี่วิชา",
+          "sql": "SELECT n_courses FROM v_semester_credits WHERE year=3 AND semester=1 LIMIT 200",
+          "answer": "3 วิชา",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.57
+        },
+        {
+          "id": "Q12",
+          "question": "วิชา 06026200 ชื่อว่าอะไร",
+          "sql": "SELECT name_th FROM course WHERE code = '06026200' LIMIT 200",
+          "answer": "แคลคูลัส 1",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.57
+        },
+        {
+          "id": "Q13",
+          "question": "วิชา 06026201 มีชื่อภาษาไทยว่าอะไร",
+          "sql": "SELECT name_th FROM course WHERE code = '06026201' LIMIT 200",
+          "answer": "แคลคูลัส 2",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.56
+        },
+        {
+          "id": "Q14",
+          "question": "วิชา 06026202 คือวิชาอะไร",
+          "sql": "SELECT c.name_th, c.name_en FROM course c WHERE c.code = '06026202' LIMIT 200",
+          "answer": "พีชคณิตเชิงเส้น",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.65
+        },
+        {
+          "id": "Q15",
+          "question": "แคลคูลัส 1 มีรหัสวิชาอะไร",
+          "sql": "SELECT code FROM course WHERE name_th = 'แคลคูลัส 1' LIMIT 200",
+          "answer": "06026200",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.6
+        },
+        {
+          "id": "Q16",
+          "question": "ชื่อหลักสูตรภาษาไทยคืออะไร",
+          "sql": "SELECT name_th FROM program LIMIT 200",
+          "answer": "วิทยาการข้อมูลและการวิเคราะห์เชิงธุรกิจ (สหกิจศึกษา)",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.69
+        },
+        {
+          "id": "Q17",
+          "question": "วิชา 06066303 ชื่อว่าอะไร",
+          "sql": "SELECT c.name_th FROM course c WHERE c.code = '06066303' LIMIT 200",
+          "answer": "การแก้ปัญหาและการโปรแกรมคอมพิวเตอร์",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.67
+        },
+        {
+          "id": "Q18",
+          "question": "วิชาอะไรบ้างที่เรียนในปีที่ 3 เทอม 1 บอกรหัสวิชา",
+          "sql": "SELECT code FROM v_plan WHERE year=3 AND semester=1 LIMIT 200",
+          "answer": "วิชาที่เรียนในปีที่ 3 เทอม 1 คือ 06026211, 06026212, 90644042",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.92
+        },
+        {
+          "id": "Q19",
+          "question": "วิชา 06016401 มีชื่อภาษาอังกฤษว่าอะไร",
+          "sql": "SELECT c.name_en FROM course c WHERE c.code = '06016401' LIMIT 200",
+          "answer": "ไม่พบข้อมูลนี้ในเล่มหลักสูตร",
+          "correct": false,
+          "sql_ok": true,
+          "seconds": 0.33
+        },
+        {
+          "id": "Q20",
+          "question": "วิชา 06026201 ต้องเรียนวิชาอะไรมาก่อน บอกรหัส",
+          "sql": "SELECT requires FROM prerequisite WHERE code='06026201' AND kind='pre' LIMIT 200",
+          "answer": "ไม่พบข้อมูลนี้ในเล่มหลักสูตร",
+          "correct": false,
+          "sql_ok": true,
+          "seconds": 0.29
+        },
+        {
+          "id": "Q21",
+          "question": "วิชา 06026212 ต้องเรียนวิชาไหนมาก่อน บอกรหัส",
+          "sql": "SELECT requires FROM prerequisite WHERE code='06026212' AND kind='pre' LIMIT 200",
+          "answer": "ไม่พบข้อมูลนี้ในเล่มหลักสูตร",
+          "correct": false,
+          "sql_ok": true,
+          "seconds": 0.3
+        },
+        {
+          "id": "Q22",
+          "question": "SELECT code FROM prerequisite WHERE requires='06026200' — วิชาใดที่ต้องเรียน 06026200 มาก่อน",
+          "sql": "SELECT code FROM prerequisite WHERE requires='06026200' AND kind='pre' LIMIT 200",
+          "answer": "ไม่พบข้อมูลนี้ในเล่มหลักสูตร",
+          "correct": false,
+          "sql_ok": true,
+          "seconds": 0.29
+        },
+        {
+          "id": "Q23",
+          "question": "วิชา 06026215 ต้องเรียนวิชาอะไรมาก่อน บอกรหัส",
+          "sql": "SELECT requires FROM prerequisite WHERE code='06026215' AND kind='pre' LIMIT 200",
+          "answer": "ไม่พบข้อมูลนี้ในเล่มหลักสูตร",
+          "correct": false,
+          "sql_ok": true,
+          "seconds": 0.29
+        },
+        {
+          "id": "Q24",
+          "question": "ภาคเรียนไหนมีหน่วยกิตรวมมากที่สุดในตาราง v_semester_credits",
+          "sql": "SELECT year, semester, credits FROM v_semester_credits ORDER BY credits DESC LIMIT 1",
+          "answer": "ภาคเรียนที่ 2",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.57
+        },
+        {
+          "id": "Q25",
+          "question": "SELECT MIN(credits) FROM v_semester_credits — ภาคเรียนที่เรียนน้อยที่สุดมีกี่หน่วยกิต",
+          "sql": "SELECT MIN(credits) FROM v_semester_credits LIMIT 200",
+          "answer": "3 หน่วยกิต",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.56
+        },
+        {
+          "id": "Q26",
+          "question": "ปีที่ 3 เทอม 1 หรือ เทอม 2 เรียนหนักกว่ากัน กี่หน่วยกิต",
+          "sql": "SELECT year, semester, credits FROM v_semester_credits WHERE year=3 AND (semester=1 OR semester=2) ORDER BY credits DESC LIMIT 1",
+          "answer": "เทอม 2 เรียนหนักกว่ากัน 12 หน่วยกิต",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.87
+        },
+        {
+          "id": "Q27",
+          "question": "หลักสูตรนี้ใช้เวลาเรียนกี่ปี ดูจากตาราง program",
+          "sql": "SELECT years FROM program LIMIT 200",
+          "answer": "4 ปี",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.45
+        },
+        {
+          "id": "Q28",
+          "question": "วิชา 99999999 ชื่อว่าอะไร",
+          "sql": "SELECT name_th FROM course WHERE code = '99999999' LIMIT 200",
+          "answer": "ไม่พบข้อมูลนี้ในเล่มหลักสูตร",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.3
+        },
+        {
+          "id": "Q29",
+          "question": "ปีที่ 5 เทอม 1 มีกี่หน่วยกิต",
+          "sql": "SELECT credits FROM v_semester_credits WHERE year=5 AND semester=1 LIMIT 200",
+          "answer": "ไม่พบข้อมูลนี้ในเล่มหลักสูตร",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.27
+        },
+        {
+          "id": "Q30",
+          "question": "วิชา 06066303 เรียนในปีที่เท่าไร ค้นจาก plan_item",
+          "sql": "SELECT year FROM plan_item WHERE code = '06066303' LIMIT 200",
+          "answer": "1",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.46
+        }
+      ]
+    },
+    "extraction": {
+      "model": "qwen3:4b",
+      "success": true,
+      "courses_extracted": 6,
+      "seconds": 9.75,
+      "courses": [
+        {
+          "code": "06026200",
+          "name_th": "แคลคูลัส 1",
+          "name_en": "CALCULUS 1",
+          "credits": "3 (3-0-6)",
+          "year": 1,
+          "semester": 1,
+          "category": "หมวดวิชาเฉพาะ",
+          "type": "บังคับ",
+          "prerequisite": "ไม่มี",
+          "flexible_year_semester": null,
+          "note": null
+        },
+        {
+          "code": "06026202",
+          "name_th": "พีชคณิตเชิงเส้น",
+          "name_en": "LINEAR ALGEBRA",
+          "credits": "3 (3-0-6)",
+          "year": 1,
+          "semester": 1,
+          "category": "หมวดวิชาเฉพาะ",
+          "type": "บังคับ",
+          "prerequisite": "ไม่มี",
+          "flexible_year_semester": null,
+          "note": null
+        },
+        {
+          "code": "06066101",
+          "name_th": "พื้นฐานทางธุรกิจสำหรับเทคโนโลยีสารสนเทศ",
+          "name_en": "BUSINESS FUNDAMENTALS FOR INFORMATION TECHNOLOGY",
+          "credits": "3 (3-0-6)",
+          "year": 1,
+          "semester": 1,
+          "category": "หมวดวิชาเฉพาะ",
+          "type": "บังคับ",
+          "prerequisite": "ไม่มี",
+          "flexible_year_semester": null,
+          "note": null
+        },
+        {
+          "code": "06066303",
+          "name_th": "การแก้ปัญหาและการโปรแกรมคอมพิวเตอร์",
+          "name_en": "PROBLEM SOLVING AND COMPUTER PROGRAMMING",
+          "credits": "3 (2-2-5)",
+          "year": 1,
+          "semester": 1,
+          "category": "หมวดวิชาเฉพาะ",
+          "type": "บังคับ",
+          "prerequisite": "ไม่มี",
+          "flexible_year_semester": null,
+          "note": null
+        },
+        {
+          "code": "90641001",
+          "name_th": "โรงเรียนสร้างเสน่ห์",
+          "name_en": "CHARM SCHOOL",
+          "credits": "3 (3-0-6)",
+          "year": 1,
+          "semester": 1,
+          "category": "หมวดวิชาศึกษาทั่วไป",
+          "type": "บังคับ",
+          "prerequisite": "ไม่มี",
+          "flexible_year_semester": null,
+          "note": null
+        },
+        {
+          "code": "90644007",
+          "name_th": "การฟังและการพูดภาษาอังกฤษเพื่อการสื่อสาร",
+          "name_en": "ENGLISH LISTENING AND SPEAKING FOR COMMUNICATION",
+          "credits": "3 (3-0-6)",
+          "year": 1,
+          "semester": 1,
+          "category": "หมวดวิชาศึกษาทั่วไป",
+          "type": "บังคับ",
+          "prerequisite": "ไม่มี",
+          "flexible_year_semester": null,
+          "note": null
+        }
+      ]
+    }
+  },
+  "qwen2.5-coder:7b": {
+    "text_to_sql": {
+      "model": "qwen2.5-coder:7b",
+      "total_questions": 30,
+      "sql_pass_count": 30,
+      "sql_pass_rate": 100.0,
+      "answer_correct_count": 21,
+      "answer_accuracy": 70.0,
+      "avg_seconds_per_query": 0.68,
+      "total_seconds": 20.3,
+      "vram": "5665 / 8151 MB",
+      "details": [
+        {
+          "id": "Q01",
+          "question": "ปีที่ 1 เทอม 1 นักศึกษาต้องเรียนกี่หน่วยกิต",
+          "sql": "SELECT credits FROM v_semester_credits WHERE year=1 AND semester=1 LIMIT 200",
+          "answer": "18",
+          "correct": false,
+          "sql_ok": true,
+          "seconds": 3.24
+        },
+        {
+          "id": "Q02",
+          "question": "ปีที่ 1 เทอม 2 มีกี่หน่วยกิต",
+          "sql": "SELECT credits FROM v_semester_credits WHERE year=1 AND semester=2 LIMIT 200",
+          "answer": "ไม่พบข้อมูลนี้ในเล่มหลักสูตร",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.67
+        },
+        {
+          "id": "Q03",
+          "question": "ปีที่ 2 เทอม 1 นักศึกษาต้องเรียนกี่หน่วยกิต",
+          "sql": "SELECT credits FROM v_semester_credits WHERE year=2 AND semester=1 LIMIT 200",
+          "answer": "ไม่พบข้อมูลนี้ในเล่มหลักสูตร",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.69
+        },
+        {
+          "id": "Q04",
+          "question": "ปีที่ 2 เทอม 2 มีกี่หน่วยกิตรวม",
+          "sql": "SELECT credits FROM v_semester_credits WHERE year=2 AND semester=2 LIMIT 200",
+          "answer": "ไม่พบข้อมูลนี้ในเล่มหลักสูตร",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.7
+        },
+        {
+          "id": "Q05",
+          "question": "ปีที่ 3 เทอม 2 นักศึกษาต้องลงกี่หน่วยกิต",
+          "sql": "SELECT credits FROM v_semester_credits WHERE year=3 AND semester=2 LIMIT 200",
+          "answer": "ไม่พบข้อมูลนี้ในเล่มหลักสูตร",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.7
+        },
+        {
+          "id": "Q06",
+          "question": "หลักสูตรในตาราง program มีหน่วยกิตรวมทั้งหมดกี่หน่วยกิต ดูจาก total_credits",
+          "sql": "SELECT SUM(total_credits) FROM program LIMIT 200",
+          "answer": "135",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.45
+        },
+        {
+          "id": "Q07",
+          "question": "ปีที่ 4 เทอม 1 เรียนกี่หน่วยกิต",
+          "sql": "SELECT credits FROM v_semester_credits WHERE year=4 AND semester=1 LIMIT 200",
+          "answer": "ไม่พบข้อมูลนี้ในเล่มหลักสูตร",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.67
+        },
+        {
+          "id": "Q08",
+          "question": "ปีที่ 1 เทอม 1 นักศึกษาเรียนกี่วิชา",
+          "sql": "SELECT COUNT(*) FROM v_plan WHERE year=1 AND semester=1 LIMIT 200",
+          "answer": "ไม่พบข้อมูลนี้ในเล่มหลักสูตร",
+          "correct": false,
+          "sql_ok": true,
+          "seconds": 0.65
+        },
+        {
+          "id": "Q09",
+          "question": "ปีที่ 1 เทอม 2 มีกี่วิชา",
+          "sql": "SELECT COUNT(*) FROM v_plan WHERE year=1 AND semester=2 LIMIT 200",
+          "answer": "ไม่พบข้อมูลนี้ในเล่มหลักสูตร",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.68
+        },
+        {
+          "id": "Q10",
+          "question": "มีวิชาที่ลงในแผนการศึกษา (plan_item) ทั้งหมดกี่รายการ",
+          "sql": "SELECT COUNT(*) FROM plan_item LIMIT 200",
+          "answer": "มีวิชาที่ลงในแผนการศึกษา (plan_item) ทั้งหมด 36 รายการ",
+          "correct": false,
+          "sql_ok": true,
+          "seconds": 0.71
+        },
+        {
+          "id": "Q11",
+          "question": "ปีที่ 3 เทอม 1 เรียนกี่วิชา",
+          "sql": "SELECT COUNT(*) FROM v_plan WHERE year=3 AND semester=1 LIMIT 200",
+          "answer": "ไม่พบข้อมูลนี้ในเล่มหลักสูตร",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.67
+        },
+        {
+          "id": "Q12",
+          "question": "วิชา 06026200 ชื่อว่าอะไร",
+          "sql": "SELECT name_th FROM course WHERE code='06026200' LIMIT 200",
+          "answer": "แคลคูลัส 1",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.59
+        },
+        {
+          "id": "Q13",
+          "question": "วิชา 06026201 มีชื่อภาษาไทยว่าอะไร",
+          "sql": "SELECT name_th FROM course WHERE code='06026201' LIMIT 200",
+          "answer": "แคลคูลัส 2",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.58
+        },
+        {
+          "id": "Q14",
+          "question": "วิชา 06026202 คือวิชาอะไร",
+          "sql": "SELECT name_th, name_en FROM course WHERE code='06026202' LIMIT 200",
+          "answer": "พีชคณิตเชิงเส้น",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.67
+        },
+        {
+          "id": "Q15",
+          "question": "แคลคูลัส 1 มีรหัสวิชาอะไร",
+          "sql": "SELECT code FROM course WHERE name_th='แคลคูลัส 1' LIMIT 200",
+          "answer": "06026200",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.58
+        },
+        {
+          "id": "Q16",
+          "question": "ชื่อหลักสูตรภาษาไทยคืออะไร",
+          "sql": "SELECT name_th FROM program LIMIT 200",
+          "answer": "วิทยาการข้อมูลและการวิเคราะห์เชิงธุรกิจ (สหกิจศึกษา)",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.76
+        },
+        {
+          "id": "Q17",
+          "question": "วิชา 06066303 ชื่อว่าอะไร",
+          "sql": "SELECT name_th FROM course WHERE code='06066303' LIMIT 200",
+          "answer": "การแก้ปัญหาและการโปรแกรมคอมพิวเตอร์",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.68
+        },
+        {
+          "id": "Q18",
+          "question": "วิชาอะไรบ้างที่เรียนในปีที่ 3 เทอม 1 บอกรหัสวิชา",
+          "sql": "SELECT code FROM v_plan WHERE year=3 AND semester=1 LIMIT 200",
+          "answer": "ไม่พบข้อมูลนี้ในเล่มหลักสูตร",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.67
+        },
+        {
+          "id": "Q19",
+          "question": "วิชา 06016401 มีชื่อภาษาอังกฤษว่าอะไร",
+          "sql": "SELECT name_en FROM course WHERE code='06016401' LIMIT 200",
+          "answer": "ไม่พบข้อมูลนี้ในเล่มหลักสูตร",
+          "correct": false,
+          "sql_ok": true,
+          "seconds": 0.35
+        },
+        {
+          "id": "Q20",
+          "question": "วิชา 06026201 ต้องเรียนวิชาอะไรมาก่อน บอกรหัส",
+          "sql": "SELECT requires FROM prerequisite WHERE code='06026201' AND kind='pre' LIMIT 200",
+          "answer": "ไม่พบข้อมูลนี้ในเล่มหลักสูตร",
+          "correct": false,
+          "sql_ok": true,
+          "seconds": 0.36
+        },
+        {
+          "id": "Q21",
+          "question": "วิชา 06026212 ต้องเรียนวิชาไหนมาก่อน บอกรหัส",
+          "sql": "SELECT requires FROM prerequisite WHERE code='06026212' AND kind='pre' LIMIT 200",
+          "answer": "ไม่พบข้อมูลนี้ในเล่มหลักสูตร",
+          "correct": false,
+          "sql_ok": true,
+          "seconds": 0.38
+        },
+        {
+          "id": "Q22",
+          "question": "SELECT code FROM prerequisite WHERE requires='06026200' — วิชาใดที่ต้องเรียน 06026200 มาก่อน",
+          "sql": "SELECT code FROM prerequisite WHERE requires='06026200' AND kind='pre' LIMIT 200",
+          "answer": "ไม่พบข้อมูลนี้ในเล่มหลักสูตร",
+          "correct": false,
+          "sql_ok": true,
+          "seconds": 0.37
+        },
+        {
+          "id": "Q23",
+          "question": "วิชา 06026215 ต้องเรียนวิชาอะไรมาก่อน บอกรหัส",
+          "sql": "SELECT requires FROM prerequisite WHERE code='06026215' AND kind='pre' LIMIT 200",
+          "answer": "ไม่พบข้อมูลนี้ในเล่มหลักสูตร",
+          "correct": false,
+          "sql_ok": true,
+          "seconds": 0.37
+        },
+        {
+          "id": "Q24",
+          "question": "ภาคเรียนไหนมีหน่วยกิตรวมมากที่สุดในตาราง v_semester_credits",
+          "sql": "SELECT year, semester FROM v_semester_credits ORDER BY credits DESC LIMIT 1",
+          "answer": "ภาคเรียนที่มีหน่วยกิตรวมมากที่สุดในตาราง v_semester_credits คือ ภาคเรียนปีที่ 1 ภาคเรียนที่ 2",
+          "correct": false,
+          "sql_ok": true,
+          "seconds": 1.03
+        },
+        {
+          "id": "Q25",
+          "question": "SELECT MIN(credits) FROM v_semester_credits — ภาคเรียนที่เรียนน้อยที่สุดมีกี่หน่วยกิต",
+          "sql": "SELECT MIN(credits) FROM v_semester_credits LIMIT 200",
+          "answer": "3",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.47
+        },
+        {
+          "id": "Q26",
+          "question": "ปีที่ 3 เทอม 1 หรือ เทอม 2 เรียนหนักกว่ากัน กี่หน่วยกิต",
+          "sql": "SELECT semester, SUM(credits) AS credits FROM v_semester_credits WHERE year=3 GROUP BY semester LIMIT 200",
+          "answer": "เทอม 2 เรียนหนักกว่า เทอม 1 12 หน่วยกิต",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.84
+        },
+        {
+          "id": "Q27",
+          "question": "หลักสูตรนี้ใช้เวลาเรียนกี่ปี ดูจากตาราง program",
+          "sql": "SELECT years FROM program LIMIT 200",
+          "answer": "หลักสูตรนี้ใช้เวลาเรียน 4 ปี",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.53
+        },
+        {
+          "id": "Q28",
+          "question": "วิชา 99999999 ชื่อว่าอะไร",
+          "sql": "SELECT name_th FROM course WHERE code='99999999' LIMIT 200",
+          "answer": "ไม่พบข้อมูลนี้ในเล่มหลักสูตร",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.35
+        },
+        {
+          "id": "Q29",
+          "question": "ปีที่ 5 เทอม 1 มีกี่หน่วยกิต",
+          "sql": "SELECT credits FROM v_semester_credits WHERE year=5 AND semester=1 LIMIT 200",
+          "answer": "ไม่พบข้อมูลนี้ในเล่มหลักสูตร",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.33
+        },
+        {
+          "id": "Q30",
+          "question": "วิชา 06066303 เรียนในปีที่เท่าไร ค้นจาก plan_item",
+          "sql": "SELECT year FROM plan_item WHERE code='06066303' LIMIT 200",
+          "answer": "ปีที่ 1",
+          "correct": true,
+          "sql_ok": true,
+          "seconds": 0.54
+        }
+      ]
+    },
+    "extraction": {
+      "model": "qwen2.5-coder:7b",
+      "success": true,
+      "courses_extracted": 6,
+      "seconds": 13.11,
+      "courses": [
+        {
+          "code": "06026200",
+          "name_th": "แคลคูลัส 1",
+          "name_en": "CALCULUS 1",
+          "credits": "3(3-0-6)",
+          "year": 1,
+          "semester": 1,
+          "category": "หมวดวิชาเฉพาะ",
+          "type": "บังคับ",
+          "prerequisite": "ไม่มี",
+          "flexible_year_semester": null,
+          "note": null
+        },
+        {
+          "code": "06026202",
+          "name_th": "พีชคณิตเชิงเส้น",
+          "name_en": "LINEAR ALGEBRA",
+          "credits": "3(3-0-6)",
+          "year": 1,
+          "semester": 1,
+          "category": "หมวดวิชาเฉพาะ",
+          "type": "บังคับ",
+          "prerequisite": "ไม่มี",
+          "flexible_year_semester": null,
+          "note": null
+        },
+        {
+          "code": "06066101",
+          "name_th": "พื้นฐานทางธุรกิจสำหรับเทคโนโลยีสารสนเทศ",
+          "name_en": "BUSINESS FUNDAMENTALS FOR INFORMATION TECHNOLOGY",
+          "credits": "3(3-0-6)",
+          "year": 1,
+          "semester": 1,
+          "category": "หมวดวิชาเฉพาะ",
+          "type": "บังคับ",
+          "prerequisite": "ไม่มี",
+          "flexible_year_semester": null,
+          "note": null
+        },
+        {
+          "code": "06066303",
+          "name_th": "การแก้ปัญหาและการโปรแกรมคอมพิวเตอร์",
+          "name_en": "PROBLEM SOLVING AND COMPUTER PROGRAMMING",
+          "credits": "3(2-2-5)",
+          "year": 1,
+          "semester": 1,
+          "category": "หมวดวิชาเฉพาะ",
+          "type": "บังคับ",
+          "prerequisite": "ไม่มี",
+          "flexible_year_semester": null,
+          "note": null
+        },
+        {
+          "code": "90641001",
+          "name_th": "โรงเรียนสร้างเสน่ห์",
+          "name_en": "CHARM SCHOOL",
+          "credits": "3(3-0-6)",
+          "year": 1,
+          "semester": 1,
+          "category": "หมวดวิชาศึกษาทั่วไป",
+          "type": "บังคับ",
+          "prerequisite": "ไม่มี",
+          "flexible_year_semester": null,
+          "note": null
+        },
+        {
+          "code": "90644007",
+          "name_th": "การฟังและการพูดภาษาอังกฤษเพื่อการสื่อสาร",
+          "name_en": "ENGLISH LISTENING AND SPEAKING FOR COMMUNICATION",
+          "credits": "3(3-0-6)",
+          "year": 1,
+          "semester": 1,
+          "category": "หมวดวิชาศึกษาทั่วไป",
+          "type": "บังคับ",
+          "prerequisite": "ไม่มี",
+          "flexible_year_semester": null,
+          "note": null
+        }
+      ]
+    }
+  }
+}
