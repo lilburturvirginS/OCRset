@@ -866,21 +866,6 @@ python src/ocr_system/lab8b_curriculum_db.py eval
 
 ---
 
-## ขั้นตอนที่ 6 — รัน Web App
-
-```bash
-uvicorn app.main:app --reload
-```
-
-เปิดเบราว์เซอร์:
-```text
-http://localhost:8000
-```
-
-พิมพ์คำถามภาษาไทยในช่องค้นหา แล้วรอรับคำตอบ
-
----
-
 ## ไฟล์สำคัญทั้งหมดของ Lab 8B
 
 ```text
@@ -890,11 +875,6 @@ work/lab8b_run/
     verify.json                 ผล 7 กฎ
     gold_questions.json         30 คำถามทดสอบ + คำตอบ
     eval_result.json            ผลการรัน (SQL 100%, ตอบถูก 97%)
-
-app/
-    main.py                     FastAPI Backend
-    index.html                  หน้าเว็บสำหรับถามคำถาม
-    data/dsba_coop.db           SQLite Database
 ```
 
 ---
